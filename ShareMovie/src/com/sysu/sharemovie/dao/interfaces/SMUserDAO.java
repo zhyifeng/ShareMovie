@@ -6,5 +6,5 @@ public interface SMUserDAO {
 	
 	public boolean addSMUser(SMUser user) throws Exception;
 	
-	public boolean validateSMUser(String username, String password, String repasword) throws Exception;
+	public boolean validateSMUser(SMUser user) throws Exception;
 }

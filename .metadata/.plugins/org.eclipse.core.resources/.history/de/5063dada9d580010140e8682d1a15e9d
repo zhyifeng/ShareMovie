@@ -1,0 +1,6 @@
+package com.sysu.sharemovie.ShareMovieServlet;
+import java.io.IOException;
+
+public class ShareMovieServlet {
+
+}

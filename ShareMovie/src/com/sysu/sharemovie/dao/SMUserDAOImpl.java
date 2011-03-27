@@ -24,9 +24,10 @@ public class SMUserDAOImpl implements SMUserDAO{
 	}
 
 	@Override
-	public boolean validateSMUser(String username, String password, String repassword) throws Exception {
-		if (isSMUserExit(username)){
-			if (password.equals(repassword)){
+	public boolean validateSMUser(SMUser user) throws Exception {
+		List<SMUser> result = querySMUser(user.getUsername());
+		if (result.size()>0){
+			if (user.getPassword().equals(result.get(0).getPassword())){
 				return true;
 			}
 			else{

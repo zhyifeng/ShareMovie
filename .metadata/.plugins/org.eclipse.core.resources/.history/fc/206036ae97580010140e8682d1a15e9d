@@ -1,0 +1,10 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
+<html>
+	<head>
+	<title>Home</title>
+	</head>
+	<body>
+		<a href="userView/register.jsp">register</a>
+		<a href="userView/register.jsp">register</a>
+	</body>
+</html>

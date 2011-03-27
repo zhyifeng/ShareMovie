@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="user" namespace="/" extends"struts-default">
+	<action name="login" class="com.sysu.sharemovie.action.user.Login">
+	<result name="success" type="redirectAction">/main.jsp</result>
+	<result name="input">/user/login.jsp</result>
+	</action>

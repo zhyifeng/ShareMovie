@@ -43,11 +43,11 @@ public class SMUser {
 	@Persistent
 	private Set<Key> userComments;
 	
-	public SMUser(String username, String password) {
+/*	public SMUser(String username, String password) {
 		this.username = username;
 		this.password = password;
 	}
-
+*/
 	public Key getKey() {
 		return key;
 	}

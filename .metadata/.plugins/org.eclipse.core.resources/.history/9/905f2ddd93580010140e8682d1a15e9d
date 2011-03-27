@@ -1,0 +1,14 @@
+package com.sysu.sharemovie.action.user;
+
+import com.opensymphony.xwork2.ActionSupport;
+import com.sysu.sharemovie.dao.SMUserDAOImpl;
+import com.sysu.sharemovie.dao.interfaces.SMUserDAO;
+import com.sysu.sharemovie.jdo.SMUser;
+
+public class Register extends ActionSupport implements ModelDriven<SMUser>,ServletRequestAware {
+
+	public String execute() throws Exception {
+		SMUserDAO userDAO = new SMUserDAOImpl();
+		
+	}
+}

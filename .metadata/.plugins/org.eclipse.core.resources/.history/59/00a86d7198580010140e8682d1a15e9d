@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<struts>
+	<package name="user" namespace="/" extends"struts-default">
+		<action name="login" class="com.sysu.sharemovie.action.user.Login">
+		<result name="success" type="redirectAction">/index.jsp</result>
+		<result name="input">/userView/login.jsp</result>
+		</action>
+		<action name="register" class="com.sysu.sharemovie.action.user.Register">
+		<result name="success" type="redirectAction">/index.jsp</result>
+		<result name="input">/userView/register.jsp</result>
+		</action>
+	</package>
+</struts>

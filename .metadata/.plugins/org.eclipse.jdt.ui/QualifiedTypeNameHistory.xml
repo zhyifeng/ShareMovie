@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.sysu.sharemovie.dao.interfaces.SMUserDAO"/>
+<fullyQualifiedTypeName name="com.sysu.sharemovie.dao.SMUserDAOImpl"/>
+<fullyQualifiedTypeName name="com.sysu.sharemovie.jdo.SMUser"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.ModelDriven"/>
+<fullyQualifiedTypeName name="org.apache.struts2.interceptor.ServletRequestAware"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+</qualifiedTypeNameHistroy>
