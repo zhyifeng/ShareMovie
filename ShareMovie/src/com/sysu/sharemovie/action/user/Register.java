@@ -11,20 +11,27 @@ import com.sysu.sharemovie.dao.SMUserDAOImpl;
 import com.sysu.sharemovie.dao.interfaces.SMUserDAO;
 import com.sysu.sharemovie.jdo.SMUser;
 
+@SuppressWarnings("serial")
 public class Register extends ActionSupport implements ModelDriven<SMUser>,ServletRequestAware {
 
 	private SMUser user = new SMUser();
 	private HttpServletRequest request;
+	private String repassword;
 	
 	public String execute() throws Exception {
 		SMUserDAO userDAO = new SMUserDAOImpl();
+		if (!repassword.equals(user.getPassword())){
+			this.addActionError("password and repassword are not equal");
+			return INPUT;
+		}
 		if (!userDAO.addSMUser(user)) {
 			this.addActionError("username has been used");
 			return INPUT;
 		}
 		HttpSession session = request.getSession();
 		session.setAttribute("username", user.getUsername());
-		session.setMaxInactiveInterval(60*60*3);
+		session.setMaxInactiveInterval(60);
+		this.addActionMessage("Congratulation, Register Successfully");
 		return SUCCESS;
 	}
 
@@ -36,5 +43,9 @@ public class Register extends ActionSupport implements ModelDriven<SMUser>,Servl
 	@Override
 	public SMUser getModel() {
 		return user;
+	}
+	
+	public void setRepassword(String repassword){
+		this.repassword = repassword;
 	}
 }

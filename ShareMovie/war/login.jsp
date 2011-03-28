@@ -5,7 +5,8 @@
 	<title>Login</title>
 	</head>
 	<body>
-	<s:form action="login" namespace="/">
+	<s:actionerror/>
+	<s:form action="loginact" namespace="/" method="post">
 		<s:textfield label="username" cssClass="input_list" name="username" />
 		<s:password label="password" cssClass="input_list" name="password" />
 		<s:submit value="login" />

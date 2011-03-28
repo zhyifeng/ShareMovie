@@ -5,9 +5,11 @@
 	<title>Register</title>
 	</head>
 	<body>
-	<s:form action="register" namespace="/">
+	<s:actionerror/>
+	<s:form action="registeract" namespace="/" method="post">
 		<s:textfield label="username" cssClass="input_list" name="username" />
 		<s:password label="password" cssClass="input_list" name="password" />
+		<s:password label="repassword" cssClass="input_list" name="repassword" />
 		<s:submit value="register" />
 	</s:form>
 	</body>

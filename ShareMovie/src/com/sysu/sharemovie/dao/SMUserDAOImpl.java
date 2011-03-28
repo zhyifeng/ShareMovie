@@ -12,6 +12,7 @@ public class SMUserDAOImpl implements SMUserDAO{
 
 	@Override
 	public boolean addSMUser(SMUser user) throws Exception {
+		//System.out.print(user.getUsername());
 		if (isSMUserExit(user.getUsername()))
 			return false;
 		PersistenceManager pm = PMF.get().getPersistenceManager();
@@ -52,6 +53,7 @@ public class SMUserDAOImpl implements SMUserDAO{
 		Query query = pm.newQuery(SMUser.class, "username == '"+username+"'");
 		try{
 			List<SMUser> result = (List<SMUser>)query.execute();
+			result.size();
 			return result;
 		}finally{
 			query.closeAll();

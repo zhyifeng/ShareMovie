@@ -11,6 +11,7 @@ import com.sysu.sharemovie.dao.SMUserDAOImpl;
 import com.sysu.sharemovie.dao.interfaces.SMUserDAO;
 import com.sysu.sharemovie.jdo.SMUser;
 
+@SuppressWarnings("serial")
 public class Login extends ActionSupport implements ModelDriven<SMUser>,ServletRequestAware {
 	private SMUser user = new SMUser();
 	private HttpServletRequest request;
@@ -24,6 +25,7 @@ public class Login extends ActionSupport implements ModelDriven<SMUser>,ServletR
 		HttpSession session = request.getSession();
 		session.setAttribute("username", user.getUsername());
 		session.setMaxInactiveInterval(60*60*3);
+		this.addActionMessage("Welcome, dear "+user.getUsername());
 		return SUCCESS;
 	}
 

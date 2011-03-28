@@ -5,16 +5,19 @@
 
 <struts>
 	<package name="ShareMovie" namespace="/" extends="struts-default">
-		<action name="login" class="com.sysu.sharemovie.action.user.Login">
-		<result name="success" type="redirectAction">home</result>
+	    <action name="login">
+	    <result>login.jsp</result>
+	    </action>
+		<action name="loginact" class="com.sysu.sharemovie.action.user.Login">
+		<result name="success">home.jsp</result>
 		<result name="input">login.jsp</result>
 		</action>
-		<action name="register" class="com.sysu.sharemovie.action.user.Register">
-		<result name="success" type="redirectAction">home</result>
-		<result name="input">register.jsp</result>
+		<action name="register">
+		<result>register.jsp</result>
 		</action>
-		<action name="*">
-		<result>index.jsp</result>
+		<action name="registeract" class="com.sysu.sharemovie.action.user.Register">
+		<result name="success">home.jsp</result>
+		<result name="input">register.jsp</result>
 		</action>
 	</package>
 </struts>
