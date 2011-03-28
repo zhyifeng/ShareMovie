@@ -11,6 +11,6 @@
 		<s:password label="password" cssClass="input_list" name="password" />
 		<s:password label="repassword" cssClass="input_list" name="repassword" />
 		<s:submit value="register" />
-	</s:form>
+	</s:form> 
 	</body>
 </html>

@@ -10,7 +10,6 @@ import com.sysu.sharemovie.jdo.SMUser;
 public class SMUserDAO extends DAOSupport{
 
 	public boolean addSMUser(SMUser user) throws Exception {
-		//System.out.print(user.getUsername());
 		if (isSMUserExit(user.getUsername()))
 			return false;
 //		PersistenceManager pm = PMF.get().getPersistenceManager();

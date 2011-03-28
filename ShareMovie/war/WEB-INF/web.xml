@@ -19,7 +19,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
     </filter>
     <filter-mapping>
 	    <filter-name>struts2-gae</filter-name>
-	    <url-pattern>/sharemovie/*</url-pattern>
+	    <url-pattern>/aaa/*</url-pattern>
     </filter-mapping>
  
     <listener>

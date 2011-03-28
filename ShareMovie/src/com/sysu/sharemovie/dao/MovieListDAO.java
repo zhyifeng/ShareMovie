@@ -1,7 +1,5 @@
 package com.sysu.sharemovie.dao;
 
-import javax.jdo.PersistenceManager;
-
 import com.google.appengine.api.datastore.Key;
 import com.sysu.sharemovie.jdo.MovieList;
 import com.sysu.sharemovie.dao.DAOSupport;

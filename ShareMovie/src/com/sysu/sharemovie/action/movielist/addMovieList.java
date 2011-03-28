@@ -38,13 +38,13 @@ public class addMovieList extends BaseAction implements ModelDriven<MovieList>{
 			user = userDAO.querySMUserByID(userKey);
 			Set<Key> userMovieList = user.getUserMovielist();
 			userMovieList.add(list.getKey());
-			user.setUserMovielist(userMovieList);
+			//user.setUserMovielist(userMovieList);
 			list.setOwner(userKey);
-			list.setListname("adfsdf");
-			userDAO.closeconnect();
-			listDAO.closeconnect();
 		} catch (Exception e) {
 			return INPUT;
+		} finally {
+			userDAO.closeconnect();
+			listDAO.closeconnect();		
 		}
 		this.addActionMessage("success");
 		return SUCCESS;
