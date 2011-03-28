@@ -1,25 +1,19 @@
 package com.sysu.sharemovie.action.user;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
-import org.apache.struts2.interceptor.ServletRequestAware;
-
-import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
-import com.sysu.sharemovie.dao.SMUserDAOImpl;
-import com.sysu.sharemovie.dao.interfaces.SMUserDAO;
+import com.sysu.sharemovie.action.BaseAction;
+import com.sysu.sharemovie.dao.SMUserDAO;
 import com.sysu.sharemovie.jdo.SMUser;
 
 @SuppressWarnings("serial")
-public class Register extends ActionSupport implements ModelDriven<SMUser>,ServletRequestAware {
+public class Register extends BaseAction implements ModelDriven<SMUser> {
 
 	private SMUser user = new SMUser();
-	private HttpServletRequest request;
 	private String repassword;
 	
 	public String execute() throws Exception {
-		SMUserDAO userDAO = new SMUserDAOImpl();
+		SMUserDAO userDAO = new SMUserDAO();
+		userDAO.makeconnect();
 		if (!repassword.equals(user.getPassword())){
 			this.addActionError("password and repassword are not equal");
 			return INPUT;
@@ -28,16 +22,11 @@ public class Register extends ActionSupport implements ModelDriven<SMUser>,Servl
 			this.addActionError("username has been used");
 			return INPUT;
 		}
-		HttpSession session = request.getSession();
-		session.setAttribute("username", user.getUsername());
-		session.setMaxInactiveInterval(60);
+		setSession("username", user.getUsername());
+		setSession("userkey", user.getKey());
+		userDAO.closeconnect();
 		this.addActionMessage("Congratulation, Register Successfully");
 		return SUCCESS;
-	}
-
-	@Override
-	public void setServletRequest(HttpServletRequest request) {
-		this.request=request;
 	}
 
 	@Override

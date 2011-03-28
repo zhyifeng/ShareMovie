@@ -4,7 +4,7 @@
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-	<package name="ShareMovie" namespace="/" extends="struts-default">
+	<package name="ShareMovie" namespace="/sharemovie" extends="struts-default">
 	    <action name="login">
 	    <result>login.jsp</result>
 	    </action>
@@ -19,5 +19,10 @@
 		<result name="success">home.jsp</result>
 		<result name="input">register.jsp</result>
 		</action>
+		<action name="addlist" class="com.sysu.sharemovie.action.movielist.addMovieList">
+		<result name="success">home.jsp</result>
+		<result name="input">addlist.jsp</result>
+		</action>
+		
 	</package>
 </struts>

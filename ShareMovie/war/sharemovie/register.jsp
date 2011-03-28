@@ -2,14 +2,15 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <html>
 	<head>
-	<title>Login</title>
+	<title>Register</title>
 	</head>
 	<body>
 	<s:actionerror/>
-	<s:form action="loginact" namespace="/" method="post">
+	<s:form action="registeract" namespace="/sharemovie" method="post">
 		<s:textfield label="username" cssClass="input_list" name="username" />
 		<s:password label="password" cssClass="input_list" name="password" />
-		<s:submit value="login" />
+		<s:password label="repassword" cssClass="input_list" name="repassword" />
+		<s:submit value="register" />
 	</s:form>
 	</body>
 </html>

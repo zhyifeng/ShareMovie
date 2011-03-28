@@ -4,7 +4,7 @@
 	<title>Home</title>
 	</head>
 	<body>
-		<a href="login">login.jsp</a>
-		<a href="register">register.jsp</a>
+		<a href="login.jsp">login</a>
+		<a href="register.jsp">register</a>
 	</body>
 </html>

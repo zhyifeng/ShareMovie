@@ -9,5 +9,8 @@
 </head>
 <body>
     <s:actionmessage/>
+    <s:property value="#session.username"/>
+    <s:property value="#session.userkey"/> 
+    <a href="addlist.jsp">add</a>
 </body>
 </html>

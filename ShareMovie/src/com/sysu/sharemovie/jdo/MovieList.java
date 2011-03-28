@@ -23,10 +23,10 @@ public class MovieList {
 	private Date createdate;
 	
 	@Persistent
-	private float score;
+	private float score=0;
 	
 	@Persistent
-	private int numofscore;
+	private int numofscore=0;
 	
 	@Persistent
 	private String listDescription;
@@ -39,19 +39,9 @@ public class MovieList {
 	
 	@Persistent
 	private Set<Key> movieTag;
-
 	
-	public MovieList(String listname, Date createdate, String listDescription,
-			Set<Key> movieInList, Set<Key> movieTag) {
-		super();
-		this.listname = listname;
-		this.createdate = createdate;
-		this.listDescription = listDescription;
-		this.movieInList = movieInList;
-		this.movieTag = movieTag;
-		this.score = 0.0f;
-		this.numofscore = 0;
-	}
+	@Persistent
+	private Key Owner;
 
 	public Key getKey() {
 		return key;
@@ -123,6 +113,14 @@ public class MovieList {
 
 	public void setMovieTag(Set<Key> movieTag) {
 		this.movieTag = movieTag;
+	}
+
+	public void setOwner(Key owner) {
+		Owner = owner;
+	}
+
+	public Key getOwner() {
+		return Owner;
 	}
 	
 	

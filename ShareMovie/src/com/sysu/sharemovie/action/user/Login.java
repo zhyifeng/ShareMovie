@@ -1,37 +1,27 @@
 package com.sysu.sharemovie.action.user;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
-import org.apache.struts2.interceptor.ServletRequestAware;
-
-import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
-import com.sysu.sharemovie.dao.SMUserDAOImpl;
-import com.sysu.sharemovie.dao.interfaces.SMUserDAO;
+import com.sysu.sharemovie.action.BaseAction;
+import com.sysu.sharemovie.dao.SMUserDAO;
 import com.sysu.sharemovie.jdo.SMUser;
 
 @SuppressWarnings("serial")
-public class Login extends ActionSupport implements ModelDriven<SMUser>,ServletRequestAware {
+public class Login extends BaseAction implements ModelDriven<SMUser> {
 	private SMUser user = new SMUser();
-	private HttpServletRequest request;
 	
 	public String execute() throws Exception {
-		SMUserDAO userDAO = new SMUserDAOImpl();
+		SMUserDAO userDAO = new SMUserDAO();
+		userDAO.makeconnect();
 		if (!userDAO.validateSMUser(user)) {
 			this.addActionError("wrong username or password");
 			return INPUT;
 		}
-		HttpSession session = request.getSession();
-		session.setAttribute("username", user.getUsername());
-		session.setMaxInactiveInterval(60*60*3);
-		this.addActionMessage("Welcome, dear "+user.getUsername());
+		SMUser loginnedUser = userDAO.querySMUser(user.getUsername());
+		setSession("username", loginnedUser.getUsername());
+		setSession("userkey", loginnedUser.getKey());
+		userDAO.closeconnect();
+		this.addActionMessage("Welcome, dear "+loginnedUser.getUsername());
 		return SUCCESS;
-	}
-
-	@Override
-	public void setServletRequest(HttpServletRequest request) {
-		this.request=request;
 	}
 
 	@Override

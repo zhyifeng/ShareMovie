@@ -2,13 +2,16 @@ package com.sysu.sharemovie.dao;
 
 import javax.jdo.PersistenceManager;
 
-public class DAOSupoort {
+public class DAOSupport {
 	
 	protected PersistenceManager pm = null;
 	
-	protected void addtodatabase(Object object) throws Exception{
+	public void makeconnect() {
 		pm = PMF.get().getPersistenceManager();
-		
+	}
+	
+	public void closeconnect() {
+		pm.close();
 	}
 	
 }
