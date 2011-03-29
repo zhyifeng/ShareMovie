@@ -9,7 +9,7 @@ import com.sysu.sharemovie.jdo.SMUser;
 
 public class SMUserDAO extends DAOSupport{
 
-	public boolean addSMUser(SMUser user) throws Exception {
+	public boolean addSMUser(SMUser user){
 		if (isSMUserExit(user.getUsername()))
 			return false;
 //		PersistenceManager pm = PMF.get().getPersistenceManager();
@@ -21,7 +21,7 @@ public class SMUserDAO extends DAOSupport{
 		}
 	}
 
-	public boolean validateSMUser(SMUser user) throws Exception {
+	public boolean validateSMUser(SMUser user) {
 		SMUser result = querySMUser(user.getUsername());
 		if (result!=null){
 			if (user.getPassword().equals(result.getPassword())){
@@ -59,8 +59,7 @@ public class SMUserDAO extends DAOSupport{
 		}
 	}
 	
-	public SMUser querySMUserByID(Key userkey)
-			throws Exception {
+	public SMUser querySMUserByID(Key userkey){
 //		PersistenceManager pm = PMF.get().getPersistenceManager();
 		try{
 			SMUser user = pm.getObjectById(SMUser.class, userkey);

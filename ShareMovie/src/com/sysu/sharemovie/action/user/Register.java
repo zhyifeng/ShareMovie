@@ -11,7 +11,7 @@ public class Register extends BaseAction implements ModelDriven<SMUser> {
 	private SMUser user = new SMUser();
 	private String repassword;
 	
-	public String execute() throws Exception {
+	public String execute(){
 		SMUserDAO userDAO = new SMUserDAO();
 		userDAO.makeconnect();
 		if (!repassword.equals(user.getPassword())){

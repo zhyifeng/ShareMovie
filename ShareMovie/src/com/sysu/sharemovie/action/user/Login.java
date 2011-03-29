@@ -9,7 +9,7 @@ import com.sysu.sharemovie.jdo.SMUser;
 public class Login extends BaseAction implements ModelDriven<SMUser> {
 	private SMUser user = new SMUser();
 	
-	public String execute() throws Exception {
+	public String execute(){
 		SMUserDAO userDAO = new SMUserDAO();
 		userDAO.makeconnect();
 		if (!userDAO.validateSMUser(user)) {

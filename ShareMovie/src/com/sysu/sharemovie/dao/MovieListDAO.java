@@ -6,7 +6,7 @@ import com.sysu.sharemovie.dao.DAOSupport;
 
 public class MovieListDAO extends DAOSupport{
 
-	public boolean addMovieList(MovieList movielist) throws Exception {
+	public boolean addMovieList(MovieList movielist) {
 //		PersistenceManager pm = PMF.get().getPersistenceManager();
 		try{
 			pm.makePersistent(movielist);
@@ -19,8 +19,7 @@ public class MovieListDAO extends DAOSupport{
 		}
 	}
 
-	public MovieList queryMovieListByID(Key movielistkey)
-			throws Exception {
+	public MovieList queryMovieListByID(Key movielistkey){
 //		PersistenceManager pm = PMF.get().getPersistenceManager();
 		try{
 			MovieList list = pm.getObjectById(MovieList.class, movielistkey);
