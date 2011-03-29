@@ -26,4 +26,11 @@ public class BaseAction extends ActionSupport implements ServletRequestAware{
 		HttpSession session = request.getSession();
 		return session.getAttribute(arg0);
 	}
+	
+	protected boolean loggedIn() {
+		if (getSession("userkey")==null)
+			return false;
+		else
+			return true;
+	}
 }
