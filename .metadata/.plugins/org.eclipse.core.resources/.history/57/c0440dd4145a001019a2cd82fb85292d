@@ -1,0 +1,12 @@
+package com.sysu.sharemovie.action.movie;
+
+import com.google.appengine.api.datastore.Key;
+import com.sysu.sharemovie.action.BaseAction;
+
+public class deleteMovie extends BaseAction {
+
+	
+	public boolean delMovie(Key key) {
+		
+	}
+}

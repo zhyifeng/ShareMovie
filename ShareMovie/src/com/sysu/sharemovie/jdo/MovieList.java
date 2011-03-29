@@ -35,13 +35,13 @@ public class MovieList {
 	private Set<Key> movieInList;
 	
 	@Persistent
-	private Set<Key> movieComments;
+	private Set<Key> movieComment;
 	
 	@Persistent
 	private Set<Key> movieTag;
 	
 	@Persistent
-	private Key Owner;
+	private Key author;
 
 	public Key getKey() {
 		return key;
@@ -99,12 +99,12 @@ public class MovieList {
 		this.movieInList = movieInList;
 	}
 
-	public Set<Key> getMovieComments() {
-		return movieComments;
+	public Set<Key> getMovieComment() {
+		return movieComment;
 	}
 
-	public void setMovieComments(Set<Key> movieComments) {
-		this.movieComments = movieComments;
+	public void setMovieComment(Set<Key> movieComment) {
+		this.movieComment = movieComment;
 	}
 
 	public Set<Key> getMovieTag() {
@@ -115,12 +115,12 @@ public class MovieList {
 		this.movieTag = movieTag;
 	}
 
-	public void setOwner(Key owner) {
-		Owner = owner;
+	public void setAuthor(Key owner) {
+		author = owner;
 	}
 
-	public Key getOwner() {
-		return Owner;
+	public Key getAuthor() {
+		return author;
 	}
 	
 	

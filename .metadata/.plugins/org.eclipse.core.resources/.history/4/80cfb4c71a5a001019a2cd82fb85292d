@@ -1,0 +1,22 @@
+package com.sysu.sharemovie.action.comment;
+
+import com.google.appengine.api.datastore.Key;
+import com.opensymphony.xwork2.ModelDriven;
+import com.sysu.sharemovie.action.BaseAction;
+import com.sysu.sharemovie.jdo.Comment;
+import com.sysu.sharemovie.jdo.Movie;
+
+@SuppressWarnings("serial")
+public class deleteComment extends BaseAction implements ModelDriven<Comment>{
+	private Comment comment = new Comment();
+	
+	@Override
+	public Comment getModel() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public boolean delComment(Key next) {
+		return true;	
+	}
+}

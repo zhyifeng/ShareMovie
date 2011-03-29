@@ -1,0 +1,8 @@
+package com.sysu.sharemovie.action.movie;
+
+import com.opensymphony.xwork2.ModelDriven;
+import com.sysu.sharemovie.action.BaseAction;
+
+public class addMovie extends BaseAction implements ModelDriven<Movie> {
+
+}

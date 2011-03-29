@@ -16,6 +16,12 @@ public class Movie {
 	private Key key;
 	
 	@Persistent
+	private Key listkey;
+	
+	@Persistent
+	private Key author;
+	
+	@Persistent
 	private String moviename;
 	
 	@Persistent
@@ -26,12 +32,6 @@ public class Movie {
 	
 	@Persistent
 	private Blob image;
-
-	public Movie(String moviename, String movieDescription) {
-		super();
-		this.moviename = moviename;
-		this.movieDescription = movieDescription;
-	}
 
 	public Key getKey() {
 		return key;
@@ -71,6 +71,22 @@ public class Movie {
 
 	public void setImage(Blob image) {
 		this.image = image;
+	}
+
+	public void setListkey(Key listkey) {
+		this.listkey = listkey;
+	}
+
+	public Key getListkey() {
+		return listkey;
+	}
+
+	public void setAuthor(Key author) {
+		this.author = author;
+	}
+
+	public Key getAuthor() {
+		return author;
 	}
 	
 }

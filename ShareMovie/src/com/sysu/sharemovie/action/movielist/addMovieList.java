@@ -1,7 +1,5 @@
 package com.sysu.sharemovie.action.movielist;
 
-import java.util.Set;
-
 import com.google.appengine.api.datastore.Key;
 import com.opensymphony.xwork2.ModelDriven;
 import com.sysu.sharemovie.jdo.MovieList;
@@ -28,13 +26,10 @@ public class addMovieList extends BaseAction implements ModelDriven<MovieList>{
 		listDAO.makeconnect();
 		userDAO.makeconnect();
 		Key userKey = (Key) getSession("userkey");
-		// System.out.println(userKey.toString());
 		listDAO.addMovieList(list);
-		// System.out.println(list.getKey().toString());
 		SMUser user = userDAO.querySMUserByID(userKey);
 		user.getUserMovielist().add(list.getKey());
-		// user.setUserMovielist(userMovieList);
-		list.setOwner(userKey);
+		list.setAuthor(userKey);
 		userDAO.closeconnect();
 		listDAO.closeconnect();
 		this.addActionMessage("success");

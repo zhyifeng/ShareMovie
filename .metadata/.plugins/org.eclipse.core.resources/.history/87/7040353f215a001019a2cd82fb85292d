@@ -1,0 +1,57 @@
+package com.sysu.sharemovie.dao;
+
+import java.util.List;
+
+import javax.jdo.Query;
+
+import com.google.appengine.api.datastore.Key;
+import com.sysu.sharemovie.jdo.SMUser;
+import com.sysu.sharemovie.jdo.Tag;
+
+public class TagDAO extends DAOSupport{
+	
+	public boolean addTag(Tag tag) {
+		try{
+			pm.makePersistent(tag);
+			return true;
+		}catch (Exception e) {
+			return false;
+		}
+	}
+	
+	public boolean deleteTag(Key tagkey) {
+		try{
+			Tag tag = pm.getObjectById(Tag.class, tagkey);
+			pm.deletePersistent(tag);
+			return true;
+		}catch (Exception e) {
+			return false;
+		}		
+	}
+	
+	public Tag queryTag(Key tagkey){
+		try{
+			Tag tag = pm.getObjectById(Tag.class, tagkey);
+			return tag;
+		}catch (Exception e) {
+			return null;
+		}
+	}
+	
+	@SuppressWarnings("unchecked")
+	public Tag queryTag(String username){
+//		PersistenceManager pm = PMF.get().getPersistenceManager();
+		Query query = pm.newQuery(SMUser.class, "username == '"+username+"'");
+		try{
+			List<SMUser> result = (List<SMUser>)query.execute();
+			if (result.size()==0)
+				return null;
+			else
+				return result.get(0);
+		}finally{
+			query.closeAll();
+//			pm.close();
+		}
+	}
+}
+ 

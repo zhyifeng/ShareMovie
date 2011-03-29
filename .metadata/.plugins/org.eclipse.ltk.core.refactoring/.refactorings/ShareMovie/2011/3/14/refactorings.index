@@ -11,3 +11,12 @@
 1301250056698	Move file
 1301250624044	Move files
 1301387039415	Delete element
+1301411980566	Encapsulate field 'listkey'
+1301412579091	Rename field 'Owner'
+1301412712148	Rename type 'Comments'
+1301412837545	Rename type 'deleteComments'
+1301412929396	Delete element
+1301412992986	Encapsulate field 'author'
+1301413298526	Rename type 'CommentsDAO'
+1301413425666	Rename field 'movielistname'
+1301414037859	Rename type 'TagsDAO'

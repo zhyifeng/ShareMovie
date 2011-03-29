@@ -1,0 +1,9 @@
+package com.sysu.sharemovie.action.tag;
+
+import com.opensymphony.xwork2.ModelDriven;
+import com.sysu.sharemovie.action.BaseAction;
+import com.sysu.sharemovie.jdo.Movie;
+
+public class deleteTag extends BaseAction implements ModelDriven<Tag>{
+
+}

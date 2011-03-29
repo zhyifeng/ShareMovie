@@ -1,0 +1,43 @@
+package com.sysu.sharemovie.action.tag;
+
+import com.google.appengine.api.datastore.Key;
+import com.opensymphony.xwork2.ModelDriven;
+import com.sysu.sharemovie.action.BaseAction;
+import com.sysu.sharemovie.dao.CommentDAO;
+import com.sysu.sharemovie.dao.MovieListDAO;
+import com.sysu.sharemovie.jdo.MovieList;
+import com.sysu.sharemovie.jdo.Tag;
+
+public class addTag extends BaseAction implements ModelDriven<Tag>{
+	private Tag tag = new Tag();
+	
+	private Key listkey;
+	
+	public void setListkey(Key listkey) {
+		this.listkey=listkey;
+	}
+	
+	@Override
+	public Tag getModel() {
+		return tag;
+	}
+
+	public String execute(){
+		if (!loggedIn())
+			return LOGIN;
+		MovieListDAO listDAO = new MovieListDAO();
+		TagDAO tagDAO = new CommentDAO();
+		listDAO.makeconnect();
+		commentDAO.makeconnect();
+		Key userKey = (Key) getSession("userkey");
+		MovieList list = listDAO.queryMovieListByID(listkey);
+		commentDAO.addComment(comment);
+		list.getMovieComment().add(comment.getKey());
+		comment.setAuthor(userKey);
+		comment.setListkey(listkey);
+		commentDAO.closeconnect();
+		listDAO.closeconnect();
+		this.addActionMessage("success");
+		return SUCCESS;
+	}
+}

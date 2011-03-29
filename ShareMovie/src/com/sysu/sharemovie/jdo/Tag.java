@@ -20,13 +20,6 @@ public class Tag {
 	@Persistent
 	private Set<Key> taginmovielist;
     
-	
-	public Tag(String tagname, Set<Key> taginmovielist) {
-		super();
-		this.tagname = tagname;
-		this.taginmovielist = taginmovielist;
-	}
-
 	public Key getKey() {
 		return key;
 	}

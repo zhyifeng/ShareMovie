@@ -1,38 +1,59 @@
 package com.sysu.sharemovie.action.movielist;
 
+import java.util.Iterator;
+
 import com.google.appengine.api.datastore.Key;
+import com.opensymphony.xwork2.ModelDriven;
 import com.sysu.sharemovie.action.BaseAction;
+import com.sysu.sharemovie.action.comment.deleteComment;
+import com.sysu.sharemovie.action.movie.deleteMovie;
 import com.sysu.sharemovie.dao.MovieListDAO;
 import com.sysu.sharemovie.dao.SMUserDAO;
 import com.sysu.sharemovie.jdo.MovieList;
 import com.sysu.sharemovie.jdo.SMUser;
 
-public class deleteMovieList extends BaseAction {
-	private Key key;
+@SuppressWarnings("serial")
+public class deleteMovieList extends BaseAction implements ModelDriven<MovieList>{
+	private MovieList list= new MovieList();
 	
-	public void setKey(Key key) {
-		this.key=key;
+	@Override
+	public MovieList getModel() {
+		return list;
 	}
 	
 	public String execute() {
 		if (!loggedIn())
 			return LOGIN;
+		if (list.getAuthor().compareTo((Key) getSession("userkey"))!=0)
+			return ERROR;
+		delMovieList(list.getKey());
+		return SUCCESS;
+	}
+	
+	public boolean delMovieList(Key key)
+	{
 		SMUserDAO userDAO = new SMUserDAO();
 		MovieListDAO listDAO = new MovieListDAO();
 		userDAO.makeconnect();
 		listDAO.makeconnect();
-		Key userKey = (Key) getSession("userkey");
-		SMUser user = userDAO.querySMUserByID(userKey);
 		MovieList list = listDAO.queryMovieListByID(key);
-		if (list.getOwner()!=userKey){
-			userDAO.closeconnect();
-			listDAO.closeconnect();
-			return INPUT;
+		SMUser author = userDAO.querySMUserByID(list.getAuthor());
+		author.getUserMovielist().remove(list.getKey());
+		Iterator<Key> i;
+		i = list.getMovieInList().iterator();
+		deleteMovie delMov = new deleteMovie();
+		for (;i.hasNext();) {
+			delMov.delMovie(i.next());
 		}
-		user.getUserMovielist().remove(list.getKey());
-		
-		listDAO.deleteMovieList(list.getKey());
-		return SUCCESS;
+		i = list.getMovieComment().iterator();
+		deleteComment delCom = new deleteComment();
+		for (;i.hasNext();) {
+			delCom.delComment(i.next());
+		}
+		listDAO.deleteMovieList(key);
+		userDAO.closeconnect();
+		listDAO.closeconnect();
+		return true;
 	}
-	
+
 }

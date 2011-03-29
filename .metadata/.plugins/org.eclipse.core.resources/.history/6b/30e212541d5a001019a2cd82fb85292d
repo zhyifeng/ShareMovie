@@ -1,0 +1,24 @@
+package com.sysu.sharemovie.action.movie;
+
+import com.google.appengine.api.datastore.Key;
+import com.opensymphony.xwork2.ModelDriven;
+import com.sysu.sharemovie.action.BaseAction;
+import com.sysu.sharemovie.jdo.Movie;
+
+@SuppressWarnings("serial")
+public class addMovie extends BaseAction implements ModelDriven<Movie> {
+	private Movie movie = new Movie();
+	
+	private Key listkey;
+	
+	public void setListkey(Key listkey) {
+		this.listkey=listkey;
+	}
+	
+	@Override
+	public Movie getModel() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
