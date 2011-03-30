@@ -9,6 +9,7 @@
 	   <div style="margin-top:40px; margin-left:20px; font-size:20px; height:50px">
 	   <h1>欢迎登录ShareMovie</h1>
 	   </div>
+	   <s:actionmessage/>
 	        如果你还没有注册，单击此处<a href="register.jsp">注册</a>  
 	   <FONT color="red"><s:actionerror/></FONT>
 	   <s:form action="loginact" namespace="/" method="post" validate="true">

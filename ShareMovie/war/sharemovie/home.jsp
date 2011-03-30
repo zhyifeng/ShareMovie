@@ -11,6 +11,6 @@
     <s:actionmessage/>
     <s:property value="#session.username"/>
     <s:property value="#session.userkey"/> 
-    <a href="addlist.jsp">add</a>
+    <a href="addlist.jsp">添加电影列表</a>
 </body>
 </html>
