@@ -12,20 +12,20 @@ import com.sysu.sharemovie.jdo.SMUser;
 
 @SuppressWarnings("serial")
 public class deleteComment extends BaseAction{
-	private Long commentID;
+	private String commentID;
 	
-	public void setCommentID(Long commentID) {
+	public void setCommentID(String commentID) {
 		this.commentID = commentID;
 	}
 
-	public Long getCommentID() {
+	public String getCommentID() {
 		return commentID;
 	}
 
 	public String execute() {
 		if (!loggedIn())
 			return LOGIN;
-		Key commentkey=KeyFactory.createKey(Comment.class.getSimpleName(), commentID);
+		Key commentkey=KeyFactory.createKey(Comment.class.getSimpleName(), Long.parseLong(commentID));
 		CommentDAO commentDAO = new CommentDAO();
 		commentDAO.makeconnect();
 		Comment comment = commentDAO.queryComment(commentkey);

@@ -15,20 +15,20 @@ import com.sysu.sharemovie.jdo.SMUser;
 
 @SuppressWarnings("serial")
 public class deleteMovieList extends BaseAction {
-	private Long listID;
+	private String listID;
 	
-	public void setListID(Long listID) {
+	public void setListID(String listID) {
 		this.listID = listID;
 	}
 
-	public Long getListID() {
+	public String getListID() {
 		return listID;
 	}
 
 	public String execute() {
 		if (!loggedIn())
 			return LOGIN;
-		Key listkey=KeyFactory.createKey(MovieList.class.getSimpleName(), listID);
+		Key listkey=KeyFactory.createKey(MovieList.class.getSimpleName(), Long.parseLong(listID));
 		MovieListDAO listDAO = new MovieListDAO();
 		listDAO.makeconnect();
 		MovieList list = listDAO.queryMovieListByID(listkey);

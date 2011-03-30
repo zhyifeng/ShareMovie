@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="43" version="2.0">
+<workbench progressCount="42" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="380" y="199">
 <fastViewData fastViewLocation="1024">
@@ -57,11 +57,11 @@
 </editorArea>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="deleteComment.java" partName="deleteComment.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/comment/deleteComment.java" title="deleteComment.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/comment/deleteComment.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/action/comment/deleteComment.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="244" selectionOffset="768" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="868" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="deleteMovie.java" partName="deleteMovie.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/movie/deleteMovie.java" title="deleteMovie.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/movie/deleteMovie.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/action/movie/deleteMovie.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="229" selectionOffset="664" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="758" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommentDAO.java" partName="CommentDAO.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/dao/CommentDAO.java" title="CommentDAO.java" tooltip="ShareMovie/src/com/sysu/sharemovie/dao/CommentDAO.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/dao/CommentDAO.java"/>
@@ -73,15 +73,15 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="deleteMovieList.java" partName="deleteMovieList.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/movielist/deleteMovieList.java" title="deleteMovieList.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/movielist/deleteMovieList.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/deleteMovieList.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="737" selectionTopPixel="153"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="956" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="addMovie.java" partName="addMovie.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/movie/addMovie.java" title="addMovie.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/movie/addMovie.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/action/movie/addMovie.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="638" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="955" selectionTopPixel="0"/>
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="deleteTag.java" partName="deleteTag.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/tag/deleteTag.java" title="deleteTag.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/tag/deleteTag.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/action/tag/deleteTag.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1291" selectionTopPixel="616"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="482" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TagDAO.java" partName="TagDAO.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/dao/TagDAO.java" title="TagDAO.java" tooltip="ShareMovie/src/com/sysu/sharemovie/dao/TagDAO.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/dao/TagDAO.java"/>
@@ -97,11 +97,11 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="addComment.java" partName="addComment.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/comment/addComment.java" title="addComment.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/comment/addComment.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/action/comment/addComment.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="594" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1140" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="addTag.java" partName="addTag.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/tag/addTag.java" title="addTag.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/tag/addTag.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/action/tag/addTag.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="78" selectionOffset="941" selectionTopPixel="293"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1037" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SMUserDAO.java" partName="SMUserDAO.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/dao/SMUserDAO.java" title="SMUserDAO.java" tooltip="ShareMovie/src/com/sysu/sharemovie/dao/SMUserDAO.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/dao/SMUserDAO.java"/>
@@ -121,7 +121,6 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
@@ -341,165 +340,164 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/deleteMovieList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/comment/deleteComment.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/movie/deleteMovie.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/user/Register.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/tag/deleteTag.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/comment/addComment.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/movie/addMovie.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/addMovieList.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/tag/addTag.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/deleteMovieList.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/addMovieList.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/movie/addMovie.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/movie/deleteMovie.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/comment/deleteComment.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/comment/addComment.java"/>
 </editors>
-<item historyLabel="deleteMovie.java" index="2">
-<position info="not_deleted" x="862" y="0"/>
+<item historyLabel="deleteTag.java" index="0">
+<position info="not_deleted" x="474" y="0"/>
 </item>
-<item historyLabel="deleteMovie.java" index="2">
-<position info="not_deleted" x="45" y="0"/>
+<item historyLabel="deleteTag.java" index="0">
+<position info="not_deleted" x="546" y="6"/>
 </item>
-<item historyLabel="deleteMovie.java" index="2">
-<position info="not_deleted" x="148" y="0"/>
+<item historyLabel="deleteTag.java" index="0">
+<position info="not_deleted" x="512" y="6"/>
 </item>
-<item historyLabel="deleteMovie.java" index="2">
-<position info="not_deleted" x="195" y="0"/>
+<item historyLabel="deleteTag.java" index="0">
+<position info="not_deleted" x="600" y="6"/>
 </item>
-<item historyLabel="deleteMovie.java" index="2">
-<position info="not_deleted" x="283" y="0"/>
+<item historyLabel="deleteTag.java" index="0">
+<position info="not_deleted" x="569" y="6"/>
 </item>
-<item historyLabel="Register.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="deleteTag.java" index="0">
+<position info="not_deleted" x="669" y="5"/>
 </item>
-<item historyLabel="deleteMovie.java" index="2">
-<position info="not_deleted" x="283" y="0"/>
+<item historyLabel="deleteTag.java" index="0">
+<position info="not_deleted" x="675" y="0"/>
 </item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="1091" y="0"/>
+<item historyLabel="deleteTag.java" index="0">
+<position info="not_deleted" x="721" y="5"/>
 </item>
-<item historyLabel="deleteMovie.java" index="2">
-<position info="not_deleted" x="664" y="229"/>
+<item historyLabel="addTag.java" index="1">
+<position info="not_deleted" x="947" y="94"/>
 </item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="1091" y="0"/>
+<item historyLabel="addTag.java" index="1">
+<position info="not_deleted" x="553" y="0"/>
 </item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="1068" y="0"/>
+<item historyLabel="addTag.java" index="1">
+<position info="not_deleted" x="623" y="6"/>
 </item>
-<item historyLabel="deleteMovie.java" index="2">
-<position info="not_deleted" x="664" y="229"/>
+<item historyLabel="addTag.java" index="1">
+<position info="not_deleted" x="589" y="6"/>
 </item>
-<item historyLabel="Register.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="addTag.java" index="1">
+<position info="not_deleted" x="677" y="6"/>
 </item>
-<item historyLabel="deleteTag.java" index="4">
-<position info="not_deleted" x="985" y="0"/>
+<item historyLabel="deleteMovieList.java" index="2">
+<position info="not_deleted" x="741" y="0"/>
 </item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="1068" y="0"/>
+<item historyLabel="deleteMovieList.java" index="2">
+<position info="not_deleted" x="660" y="0"/>
 </item>
-<item historyLabel="deleteTag.java" index="4">
-<position info="not_deleted" x="985" y="0"/>
+<item historyLabel="deleteMovieList.java" index="2">
+<position info="not_deleted" x="730" y="6"/>
 </item>
-<item historyLabel="deleteTag.java" index="4">
-<position info="not_deleted" x="483" y="0"/>
+<item historyLabel="deleteMovieList.java" index="2">
+<position info="not_deleted" x="696" y="6"/>
 </item>
-<item historyLabel="deleteTag.java" index="4">
-<position info="not_deleted" x="449" y="5"/>
+<item historyLabel="deleteMovieList.java" index="2">
+<position info="not_deleted" x="784" y="6"/>
 </item>
-<item historyLabel="deleteTag.java" index="4">
-<position info="not_deleted" x="857" y="0"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="859" y="78"/>
-</item>
-<item historyLabel="deleteTag.java" index="4">
-<position info="not_deleted" x="857" y="0"/>
-</item>
-<item historyLabel="deleteTag.java" index="4">
-<position info="not_deleted" x="146" y="0"/>
-</item>
-<item historyLabel="deleteTag.java" index="4">
-<position info="not_deleted" x="146" y="0"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="859" y="78"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="182" y="0"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="341" y="0"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="1924" y="0"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="2040" y="0"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="2035" y="0"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="1964" y="9"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="1899" y="0"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="2035" y="0"/>
-</item>
-<item historyLabel="deleteTag.java" index="4">
-<position info="not_deleted" x="997" y="0"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="2035" y="0"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="2030" y="1"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="737" y="0"/>
-</item>
-<item historyLabel="addComment.java" index="5">
-<position info="not_deleted" x="594" y="0"/>
-</item>
-<item historyLabel="deleteComment.java" index="1">
-<position info="not_deleted" x="768" y="244"/>
-</item>
-<item historyLabel="addMovie.java" index="6">
-<position info="not_deleted" x="638" y="0"/>
-</item>
-<item historyLabel="deleteMovie.java" index="2">
-<position info="not_deleted" x="664" y="229"/>
-</item>
-<item historyLabel="addMovieList.java" index="7">
+<item historyLabel="addMovieList.java" index="3">
 <position info="not_deleted" x="991" y="0"/>
 </item>
-<item historyLabel="deleteMovieList.java" index="0">
-<position info="not_deleted" x="737" y="0"/>
+<item historyLabel="addMovie.java" index="4">
+<position info="not_deleted" x="642" y="0"/>
 </item>
-<item historyLabel="addMovie.java" index="6">
-<position info="not_deleted" x="638" y="0"/>
+<item historyLabel="addMovie.java" index="4">
+<position info="not_deleted" x="570" y="0"/>
 </item>
-<item historyLabel="deleteMovie.java" index="2">
-<position info="not_deleted" x="664" y="229"/>
+<item historyLabel="addMovie.java" index="4">
+<position info="not_deleted" x="639" y="6"/>
 </item>
-<item historyLabel="addComment.java" index="5">
-<position info="not_deleted" x="594" y="0"/>
+<item historyLabel="addMovie.java" index="4">
+<position info="not_deleted" x="605" y="6"/>
 </item>
-<item historyLabel="deleteComment.java" index="1">
-<position info="not_deleted" x="768" y="244"/>
+<item historyLabel="addMovie.java" index="4">
+<position info="not_deleted" x="693" y="6"/>
 </item>
-<item historyLabel="addTag.java" index="8">
-<position info="not_deleted" x="941" y="78"/>
+<item historyLabel="deleteMovie.java" index="5">
+<position info="not_deleted" x="670" y="245"/>
 </item>
-<item historyLabel="deleteTag.java" index="4">
-<position info="not_deleted" x="997" y="0"/>
+<item historyLabel="deleteMovie.java" index="5">
+<position info="not_deleted" x="458" y="0"/>
 </item>
-<item historyLabel="addTag.java" index="8">
-<position info="not_deleted" x="941" y="78"/>
+<item historyLabel="deleteMovie.java" index="5">
+<position info="not_deleted" x="532" y="7"/>
 </item>
-<item active="true" historyLabel="deleteTag.java" index="4">
-<position info="not_deleted" x="997" y="0"/>
+<item historyLabel="deleteMovie.java" index="5">
+<position info="not_deleted" x="496" y="6"/>
+</item>
+<item historyLabel="deleteMovie.java" index="5">
+<position info="not_deleted" x="758" y="0"/>
+</item>
+<item historyLabel="addMovieList.java" index="3">
+<position info="not_deleted" x="991" y="0"/>
+</item>
+<item historyLabel="deleteMovie.java" index="5">
+<position info="not_deleted" x="758" y="0"/>
+</item>
+<item historyLabel="addMovie.java" index="4">
+<position info="not_deleted" x="955" y="0"/>
+</item>
+<item historyLabel="deleteMovie.java" index="5">
+<position info="not_deleted" x="758" y="0"/>
+</item>
+<item historyLabel="deleteComment.java" index="6">
+<position info="not_deleted" x="774" y="260"/>
+</item>
+<item historyLabel="deleteComment.java" index="6">
+<position info="not_deleted" x="548" y="0"/>
+</item>
+<item historyLabel="deleteComment.java" index="6">
+<position info="not_deleted" x="630" y="9"/>
+</item>
+<item historyLabel="deleteComment.java" index="6">
+<position info="not_deleted" x="590" y="6"/>
+</item>
+<item historyLabel="deleteComment.java" index="6">
+<position info="not_deleted" x="690" y="9"/>
+</item>
+<item historyLabel="addComment.java" index="7">
+<position info="not_deleted" x="596" y="0"/>
+</item>
+<item historyLabel="addComment.java" index="7">
+<position info="not_deleted" x="585" y="0"/>
+</item>
+<item historyLabel="addComment.java" index="7">
+<position info="not_deleted" x="655" y="6"/>
+</item>
+<item historyLabel="addComment.java" index="7">
+<position info="not_deleted" x="621" y="6"/>
+</item>
+<item historyLabel="addComment.java" index="7">
+<position info="not_deleted" x="1140" y="0"/>
+</item>
+<item historyLabel="deleteComment.java" index="6">
+<position info="not_deleted" x="868" y="0"/>
+</item>
+<item historyLabel="addMovie.java" index="4">
+<position info="not_deleted" x="955" y="0"/>
+</item>
+<item historyLabel="deleteMovie.java" index="5">
+<position info="not_deleted" x="758" y="0"/>
+</item>
+<item historyLabel="addMovieList.java" index="3">
+<position info="not_deleted" x="991" y="0"/>
+</item>
+<item historyLabel="deleteMovieList.java" index="2">
+<position info="not_deleted" x="956" y="0"/>
+</item>
+<item historyLabel="addTag.java" index="1">
+<position info="not_deleted" x="1037" y="0"/>
+</item>
+<item active="true" historyLabel="deleteTag.java" index="0">
+<position info="not_deleted" x="977" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

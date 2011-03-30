@@ -10,20 +10,20 @@ import com.sysu.sharemovie.jdo.MovieList;
 
 @SuppressWarnings("serial")
 public class deleteMovie extends BaseAction {
-	private Long movieID;
+	private String movieID;
 	
-	public void setMovieID(Long movieID) {
+	public void setMovieID(String movieID) {
 		this.movieID = movieID;
 	}
 
-	public Long getMovieID() {
+	public String getMovieID() {
 		return movieID;
 	}
 
 	public String execute() {
 		if (!loggedIn())
 			return LOGIN;
-		Key moviekey=KeyFactory.createKey(Movie.class.getSimpleName(), movieID);
+		Key moviekey=KeyFactory.createKey(Movie.class.getSimpleName(), Long.parseLong(movieID));
 		MovieDAO movieDAO = new MovieDAO();
 		movieDAO.makeconnect();
 		Movie movie = movieDAO.queryMovieInMovieList(moviekey);

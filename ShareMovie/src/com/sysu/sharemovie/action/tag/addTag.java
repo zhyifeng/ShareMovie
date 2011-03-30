@@ -13,13 +13,13 @@ import com.sysu.sharemovie.jdo.Tag;
 public class addTag extends BaseAction implements ModelDriven<Tag>{
 	private Tag tag = new Tag();
 	
-	private Long listID;
+	private String listID;
 	
-	public void setListID(Long listID) {
+	public void setListID(String listID) {
 		this.listID = listID;
 	}
 
-	public Long getListID() {
+	public String getListID() {
 		return listID;
 	}
 	
@@ -35,7 +35,7 @@ public class addTag extends BaseAction implements ModelDriven<Tag>{
 		TagDAO tagDAO = new TagDAO();
 		listDAO.makeconnect();
 		tagDAO.makeconnect();
-		Key listkey=KeyFactory.createKey(MovieList.class.getSimpleName(), listID);
+		Key listkey=KeyFactory.createKey(MovieList.class.getSimpleName(), Long.parseLong(listID));
 		MovieList list = listDAO.queryMovieListByID(listkey);
 		Tag tag = tagDAO.queryTagByName(this.tag.getTagname());
 		if (tag==null) {
