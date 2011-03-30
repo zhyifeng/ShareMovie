@@ -1,6 +1,7 @@
 package com.sysu.sharemovie.action.comment;
 
 import com.google.appengine.api.datastore.Key;
+import com.google.appengine.api.datastore.KeyFactory;
 import com.opensymphony.xwork2.ModelDriven;
 import com.sysu.sharemovie.action.BaseAction;
 import com.sysu.sharemovie.dao.CommentDAO;
@@ -12,10 +13,14 @@ import com.sysu.sharemovie.jdo.MovieList;
 public class addComment extends BaseAction implements ModelDriven<Comment>{
 	private Comment comment = new Comment();
 	
-	private Key listkey;
+	private Long listID;
 	
-	public void setListkey(Key listkey) {
-		this.listkey=listkey;
+	public void setListID(Long listID) {
+		this.listID = listID;
+	}
+
+	public Long getListID() {
+		return listID;
 	}
 	
 	@Override
@@ -31,6 +36,7 @@ public class addComment extends BaseAction implements ModelDriven<Comment>{
 		listDAO.makeconnect();
 		commentDAO.makeconnect();
 		Key userKey = (Key) getSession("userkey");
+		Key listkey=KeyFactory.createKey(MovieList.class.getSimpleName(), listID);
 		MovieList list = listDAO.queryMovieListByID(listkey);
 		commentDAO.addComment(comment);
 		list.getMovieComment().add(comment.getKey());

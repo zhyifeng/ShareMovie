@@ -1,7 +1,7 @@
 package com.sysu.sharemovie.action.comment;
 
 import com.google.appengine.api.datastore.Key;
-import com.opensymphony.xwork2.ModelDriven;
+import com.google.appengine.api.datastore.KeyFactory;
 import com.sysu.sharemovie.action.BaseAction;
 import com.sysu.sharemovie.dao.CommentDAO;
 import com.sysu.sharemovie.dao.MovieListDAO;
@@ -11,17 +11,25 @@ import com.sysu.sharemovie.jdo.MovieList;
 import com.sysu.sharemovie.jdo.SMUser;
 
 @SuppressWarnings("serial")
-public class deleteComment extends BaseAction implements ModelDriven<Comment>{
-	private Comment comment = new Comment();
+public class deleteComment extends BaseAction{
+	private Long commentID;
 	
-	@Override
-	public Comment getModel() {
-		return comment;
+	public void setCommentID(Long commentID) {
+		this.commentID = commentID;
 	}
-	
+
+	public Long getCommentID() {
+		return commentID;
+	}
+
 	public String execute() {
 		if (!loggedIn())
 			return LOGIN;
+		Key commentkey=KeyFactory.createKey(Comment.class.getSimpleName(), commentID);
+		CommentDAO commentDAO = new CommentDAO();
+		commentDAO.makeconnect();
+		Comment comment = commentDAO.queryComment(commentkey);
+		commentDAO.closeconnect();
 		if (comment.getAuthor().compareTo((Key) getSession("userkey"))!=0)
 			return ERROR;
 		delComment(comment.getKey());

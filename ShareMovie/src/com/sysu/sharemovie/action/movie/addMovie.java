@@ -13,7 +13,6 @@ import com.sysu.sharemovie.jdo.MovieList;
 public class addMovie extends BaseAction implements ModelDriven<Movie> {
 	private Movie movie = new Movie();
 	
-	private Key listkey;
 	private Long listID;
 
 	public void setListID(Long listID) {
@@ -24,11 +23,6 @@ public class addMovie extends BaseAction implements ModelDriven<Movie> {
 		return listID;
 	}
 
-	public void setListkey(Key listkey) {
-		this.listkey=listkey;
-	}
-	
-	
 	
 	@Override
 	public Movie getModel() {
@@ -46,7 +40,7 @@ public class addMovie extends BaseAction implements ModelDriven<Movie> {
 		movieDAO.makeconnect();
 		Key userKey = (Key) getSession("userkey");
 		System.out.println(listID);
-		listkey=KeyFactory.createKey(MovieList.class.getSimpleName(), listID);
+		Key listkey=KeyFactory.createKey(MovieList.class.getSimpleName(), listID);
 		MovieList list = listDAO.queryMovieListByID(listkey);
 		if (list.getAuthor().compareTo(userKey)!=0){
 			movieDAO.closeconnect();

@@ -1,7 +1,7 @@
 package com.sysu.sharemovie.action.tag;
 
 import com.google.appengine.api.datastore.Key;
-import com.opensymphony.xwork2.ModelDriven;
+import com.google.appengine.api.datastore.KeyFactory;
 import com.sysu.sharemovie.action.BaseAction;
 import com.sysu.sharemovie.dao.MovieListDAO;
 import com.sysu.sharemovie.dao.TagDAO;
@@ -9,35 +9,44 @@ import com.sysu.sharemovie.jdo.MovieList;
 import com.sysu.sharemovie.jdo.Tag;
 
 @SuppressWarnings("serial")
-public class deleteTag extends BaseAction implements ModelDriven<Tag>{
-	private Tag tag = new Tag();
+public class deleteTag extends BaseAction {
+	private Long tagID;
+	private Long listID;
 	
-	private Key listkey;
-	
-	public void setListkey(Key listkey) {
-		this.listkey=listkey;
+
+	public void setListID(Long listID) {
+		this.listID = listID;
 	}
-	
-	@Override
-	public Tag getModel() {
-		return tag;
+
+	public Long getListID() {
+		return listID;
+	}
+
+	public void setTagID(Long tagID) {
+		this.tagID = tagID;
+	}
+
+	public Long getTagID() {
+		return tagID;
 	}
 
 	public String execute() {
 		if (!loggedIn())
 			return LOGIN;
-		delTag(tag.getKey());
+		Key tagkey=KeyFactory.createKey(Tag.class.getSimpleName(), tagID);
+		Key listkey=KeyFactory.createKey(MovieList.class.getSimpleName(), listID);
+		delTag(tagkey,listkey);
 		return SUCCESS;
 	}
 	
-	private void delTag(Key key) {
+	public void delTag(Key tagkey,Key listkey) {
 		TagDAO tagDAO = new TagDAO();
 		MovieListDAO listDAO = new MovieListDAO();
 		tagDAO.makeconnect();
 		listDAO.makeconnect();
-		Tag tag = tagDAO.queryTag(key);
+		Tag tag = tagDAO.queryTag(tagkey);
 		MovieList list = listDAO.queryMovieListByID(listkey);
-		list.getMovieTag().remove(key);
+		list.getMovieTag().remove(tagkey);
 		tag.getTaginmovielist().remove(listkey);
 		tagDAO.closeconnect();
 		listDAO.closeconnect();

@@ -1,6 +1,7 @@
 package com.sysu.sharemovie.action.tag;
 
 import com.google.appengine.api.datastore.Key;
+import com.google.appengine.api.datastore.KeyFactory;
 import com.opensymphony.xwork2.ModelDriven;
 import com.sysu.sharemovie.action.BaseAction;
 import com.sysu.sharemovie.dao.MovieListDAO;
@@ -12,10 +13,14 @@ import com.sysu.sharemovie.jdo.Tag;
 public class addTag extends BaseAction implements ModelDriven<Tag>{
 	private Tag tag = new Tag();
 	
-	private Key listkey;
+	private Long listID;
 	
-	public void setListkey(Key listkey) {
-		this.listkey=listkey;
+	public void setListID(Long listID) {
+		this.listID = listID;
+	}
+
+	public Long getListID() {
+		return listID;
 	}
 	
 	@Override
@@ -30,6 +35,7 @@ public class addTag extends BaseAction implements ModelDriven<Tag>{
 		TagDAO tagDAO = new TagDAO();
 		listDAO.makeconnect();
 		tagDAO.makeconnect();
+		Key listkey=KeyFactory.createKey(MovieList.class.getSimpleName(), listID);
 		MovieList list = listDAO.queryMovieListByID(listkey);
 		Tag tag = tagDAO.queryTagByName(this.tag.getTagname());
 		if (tag==null) {

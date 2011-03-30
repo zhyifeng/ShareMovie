@@ -1,7 +1,7 @@
 package com.sysu.sharemovie.action.movie;
 
 import com.google.appengine.api.datastore.Key;
-import com.opensymphony.xwork2.ModelDriven;
+import com.google.appengine.api.datastore.KeyFactory;
 import com.sysu.sharemovie.action.BaseAction;
 import com.sysu.sharemovie.dao.MovieDAO;
 import com.sysu.sharemovie.dao.MovieListDAO;
@@ -9,17 +9,25 @@ import com.sysu.sharemovie.jdo.Movie;
 import com.sysu.sharemovie.jdo.MovieList;
 
 @SuppressWarnings("serial")
-public class deleteMovie extends BaseAction implements ModelDriven<Movie>{
-	private Movie movie= new Movie();
+public class deleteMovie extends BaseAction {
+	private Long movieID;
 	
-	@Override
-	public Movie getModel() {
-		return movie;
+	public void setMovieID(Long movieID) {
+		this.movieID = movieID;
 	}
-	
+
+	public Long getMovieID() {
+		return movieID;
+	}
+
 	public String execute() {
 		if (!loggedIn())
 			return LOGIN;
+		Key moviekey=KeyFactory.createKey(Movie.class.getSimpleName(), movieID);
+		MovieDAO movieDAO = new MovieDAO();
+		movieDAO.makeconnect();
+		Movie movie = movieDAO.queryMovieInMovieList(moviekey);
+		movieDAO.closeconnect();
 		if (movie.getAuthor().compareTo((Key) getSession("userkey"))!=0)
 			return ERROR;
 		delMovie(movie.getKey());

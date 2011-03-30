@@ -19,4 +19,5 @@
 <fullyQualifiedTypeName name="com.sysu.sharemovie.jdo.Comment"/>
 <fullyQualifiedTypeName name="com.sysu.sharemovie.dao.CommentDAO"/>
 <fullyQualifiedTypeName name="com.sysu.sharemovie.dao.TagDAO"/>
+<fullyQualifiedTypeName name="com.sysu.sharemovie.action.tag.deleteTag"/>
 </qualifiedTypeNameHistroy>
