@@ -1,5 +1,8 @@
 package com.sysu.sharemovie.action.tag;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.datastore.KeyFactory;
 import com.opensymphony.xwork2.ModelDriven;
@@ -37,13 +40,19 @@ public class addTag extends BaseAction implements ModelDriven<Tag>{
 		tagDAO.makeconnect();
 		Key listkey=KeyFactory.createKey(MovieList.class.getSimpleName(), Long.parseLong(listID));
 		MovieList list = listDAO.queryMovieListByID(listkey);
-		Tag tag = tagDAO.queryTagByName(this.tag.getTagname());
-		if (tag==null) {
-			tagDAO.addTag(this.tag);
-			tag=this.tag;
+		Tag tagex = tagDAO.queryTagByName(tag.getTagname());
+		if (tagex==null) {
+			tagDAO.addTag(tag);
+			tagex = this.tag;
 		}
-		list.getMovieTag().add(tag.getKey());
-		tag.getTaginmovielist().add(listkey);
+		System.out.println("tagkey:"+String.valueOf(tag.getKey()));
+		list.getMovieTag().add(tagex.getKey());
+		//System.out.println("listkey:"+String.valueOf(list.getKey()));
+		//tag.getTaginmovielist().add(list.getKey());
+		//Set<Key> taginmovielist = new HashSet<Key>();
+		Set<Key> taginmovielist = tagex.getTaginmovielist();
+		taginmovielist.add(list.getKey());
+		tagex.setTaginmovielist(taginmovielist);
 		tagDAO.closeconnect();
 		listDAO.closeconnect();
 		this.addActionMessage("success");

@@ -1,7 +1,0 @@
-package com.sysu.sharemovie.action.comment;
-
-import com.sysu.sharemovie.action.BaseAction;
-
-public class addComment extends BaseAction {
-
-}

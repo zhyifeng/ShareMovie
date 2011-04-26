@@ -1,0 +1,30 @@
+package com.sysu.sharemovie.action.movielist;
+
+import com.sysu.sharemovie.action.BaseAction;
+import com.sysu.sharemovie.dao.MovieListDAO;
+import com.sysu.sharemovie.dao.SMUserDAO;
+
+@SuppressWarnings("serial")
+public class cancelMovieList extends BaseAction{
+	private String listID;
+
+	public void setListID(String listID) {
+		this.listID = listID;
+	}
+
+	public String getListID() {
+		return listID;
+	}
+	
+	public String excute() {
+		if (!loggedIn())
+			return LOGIN;
+		SMUserDAO userDAO = new SMUserDAO();
+		MovieListDAO listDAO = new MovieListDAO();
+		userDAO.makeconnect();
+		listDAO.makeconnect();
+		userDAO.closeconnect();
+		listDAO.closeconnect();
+		return SUCCESS;
+	}
+}

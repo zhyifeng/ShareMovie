@@ -1,16 +1,89 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
+<%@ page import="com.google.appengine.api.datastore.Key"%>
+<%@ page import="javax.jdo.PersistenceManager"%>
+<%@ page import="com.sysu.sharemovie.dao.*"%>
+<%@ page import="com.sysu.sharemovie.jdo.*" %>
+<%@ page import="java.util.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+
+<%@page import="java.util.Iterator"%>
+<%@page import="javax.jdo.Query"%><html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>home</title>
 </head>
 <body>
     <s:actionmessage/>
-    <s:property value="#session.username"/>
-    <s:property value="#session.userkey"/> 
+    <%
+      Key key = (Key)session.getAttribute("userkey");
+      PersistenceManager pm = PMF.get().getPersistenceManager();
+      SMUser user = pm.getObjectById(SMUser.class,key);
+      pm.close();
+    %>
+          用户名：<%=user.getUsername()%>
     <a href="addlist.jsp">添加电影列表</a>
+    <%
+      Iterator<Key> iter;
+      iter = user.getUserMovielist().iterator();
+      if (iter.hasNext()) {
+    	  PersistenceManager pm1 = PMF.get().getPersistenceManager();
+    	  while (iter.hasNext()) {
+    		  MovieList usermovielist = pm1.getObjectById(MovieList.class,iter.next());
+    %>
+             <p><b>listname: <a href="movielist.jsp?listID=<%=usermovielist.getKey().getId() %>"><%=usermovielist.getListname() %></a></b></p>
+    		 <a href="deletemovielist.action?listID=<%=usermovielist.getKey().getId() %>">删除</a>
+    <% 
+         }
+    	  pm1.close();
+      }else {
+    %>
+    	  还没有创建任何电影列表
+    <%
+      }
+    %>
+    
+    <br></br>
+    <br></br>
+          你收藏的所有电影列表：
+    <%
+    iter = user.getCollectMovielist().iterator();
+    if (iter.hasNext()) {
+    	PersistenceManager pm2 = PMF.get().getPersistenceManager();
+    	while (iter.hasNext()) {
+    		MovieList usercollectlist = pm2.getObjectById(MovieList.class,iter.next());
+    %>     
+          <p><b>listname: <a href="movielist.jsp?listID=<%=usercollectlist.getKey().getId() %>"><%=usercollectlist.getListname() %></a></b></p>
+          <p><a href="cancellist.action?listID=<%=usercollectlist.getKey().getId() %>">取消收藏</a></p>
+    <%	
+    	}
+    	pm2.close();
+    } else {
+    %>
+                    你还没有任何收藏列表
+    <%	
+    }
+    %>
+    <br></br>
+    <br></br>
+          所有电影列表：
+    <%
+    PersistenceManager pm3 = PMF.get().getPersistenceManager();
+    Query query = pm3.newQuery("select from " +MovieList.class.getName());
+    try{
+		List<MovieList> result = new ArrayList<MovieList>();
+		result = (List<MovieList>)query.execute();
+		int size = result.size();
+		for (int i = 0; i < size; i++){
+	%>		
+		<p><b>listname: <a href="movielist.jsp?listID=<%=result.get(i).getKey().getId() %>"><%=result.get(i).getListname() %></a></b></p>
+    <%
+        }
+	}catch (Exception e) {
+	}finally{
+		query.closeAll();
+	}
+    %>
 </body>
 </html>

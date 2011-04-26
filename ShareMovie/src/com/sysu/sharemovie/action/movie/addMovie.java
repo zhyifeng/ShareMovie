@@ -23,7 +23,6 @@ public class addMovie extends BaseAction implements ModelDriven<Movie> {
 		return listID;
 	}
 
-	
 	@Override
 	public Movie getModel() {
 		return movie;

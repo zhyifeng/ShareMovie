@@ -19,18 +19,33 @@ public class deleteMovie extends BaseAction {
 	public String getMovieID() {
 		return movieID;
 	}
+	
+	private String listID;
+
+	public void setListID(String listID) {
+		this.listID = listID;
+	}
+
+	public String getListID() {
+		return listID;
+	}
 
 	public String execute() {
 		if (!loggedIn())
 			return LOGIN;
 		Key moviekey=KeyFactory.createKey(Movie.class.getSimpleName(), Long.parseLong(movieID));
+		System.out.print("MovieID:");
+		System.out.println(movieID);
 		MovieDAO movieDAO = new MovieDAO();
 		movieDAO.makeconnect();
 		Movie movie = movieDAO.queryMovieInMovieList(moviekey);
 		movieDAO.closeconnect();
-		if (movie.getAuthor().compareTo((Key) getSession("userkey"))!=0)
+		if (movie.getAuthor().compareTo((Key) getSession("userkey"))!=0) {
+			this.addActionError("error");
 			return ERROR;
+		}
 		delMovie(movie.getKey());
+		System.out.println("here!");
 		return SUCCESS;
 	}
 
@@ -41,6 +56,10 @@ public class deleteMovie extends BaseAction {
 		listDAO.makeconnect();
 		Movie movie = movieDAO.queryMovieInMovieList(key);
 		MovieList list = listDAO.queryMovieListByID(movie.getListkey());
+		System.out.print("moviename:");
+		System.out.println(movie.getMoviename());
+		System.out.print("movielistname:");
+		System.out.println(list.getListname());
 		list.getMovieInList().remove(key);
 		movieDAO.deleteMovie(key);
 		movieDAO.closeconnect();

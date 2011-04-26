@@ -23,7 +23,8 @@
 	<s:form action="addmovie" namespace="/sharemovie" method="post">
 		<s:textfield label="moviename" cssClass="input_list" name="moviename" />
 		<s:textfield label="descirption" cssClass="input_list" name="movieDescription"></s:textfield>
-		<s:hidden name="listID" value=""/>
+		<s:textfield label="link" cssClass="input_list" name="movielink"></s:textfield>
+		<input type="hidden" name="listID" value="${request.listID}" />
 		<s:submit value="commit" />
 	</s:form>
 	<a href="home.jsp"><button>complete</button></a>

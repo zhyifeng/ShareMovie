@@ -7,7 +7,7 @@ import javax.jdo.annotations.PrimaryKey;
 
 import com.google.appengine.api.datastore.Blob;
 import com.google.appengine.api.datastore.Key;
-import com.google.appengine.api.datastore.Link;
+//import com.google.appengine.api.datastore.Link;
 
 @PersistenceCapable
 public class Movie {
@@ -28,7 +28,7 @@ public class Movie {
 	private String movieDescription;
 	
 	@Persistent
-	private Link movielink;
+	private String movielink;
 	
 	@Persistent
 	private Blob image;
@@ -57,11 +57,11 @@ public class Movie {
 		this.movieDescription = movieDescription;
 	}
 
-	public Link getMovielink() {
+	public String getMovielink() {
 		return movielink;
 	}
 
-	public void setMovielink(Link movielink) {
+	public void setMovielink(String movielink) {
 		this.movielink = movielink;
 	}
 

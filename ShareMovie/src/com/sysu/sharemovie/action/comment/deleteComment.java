@@ -13,6 +13,7 @@ import com.sysu.sharemovie.jdo.SMUser;
 @SuppressWarnings("serial")
 public class deleteComment extends BaseAction{
 	private String commentID;
+	private String listID;
 	
 	public void setCommentID(String commentID) {
 		this.commentID = commentID;
@@ -20,6 +21,14 @@ public class deleteComment extends BaseAction{
 
 	public String getCommentID() {
 		return commentID;
+	}
+	
+	public void setListID(String listID) {
+		this.listID = listID;
+	}
+
+	public String getListID() {
+		return listID;
 	}
 
 	public String execute() {

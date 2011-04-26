@@ -1,9 +1,0 @@
-package com.sysu.sharemovie.action.tag;
-
-import com.opensymphony.xwork2.ModelDriven;
-import com.sysu.sharemovie.action.BaseAction;
-import com.sysu.sharemovie.jdo.Tag;
-
-public class addTag extends BaseAction implements ModelDriven<Tag>{
-
-}

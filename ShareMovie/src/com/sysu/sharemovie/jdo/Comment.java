@@ -19,6 +19,9 @@ public class Comment {
 	private Key author;
 	
 	@Persistent
+	private String authorname;
+	
+	@Persistent
 	private String content;
 	
 	@Persistent
@@ -65,6 +68,14 @@ public class Comment {
 
 	public void setListkey(Key listkey) {
 		this.listkey = listkey;
+	}
+
+	public void setAuthorname(String authorname) {
+		this.authorname = authorname;
+	}
+
+	public String getAuthorname() {
+		return authorname;
 	}
 	
 	

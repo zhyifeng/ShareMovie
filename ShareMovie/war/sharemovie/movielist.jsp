@@ -14,14 +14,36 @@
 </head>
 <body>
      <%
-     Long listID = (Long)request.getAttribute("listID");
+     Long listID = Long.valueOf(request.getParameter("listID"));
      PersistenceManager pm = PMF.get().getPersistenceManager();
      MovieList movielist = pm.getObjectById(MovieList.class, listID);
      pm.close();
      %>
              电影列表名：<p><b><%=movielist.getListname() %></b></p>
              列表描述：<p><%=movielist.getListDescription() %></p>
-     <a href="addmovie.jsp?parentID=<%=movielist.getKey().getId()%>" target="_blank">添加电影</a>
+     <p><a href="addtag.jsp?listID=<%=movielist.getKey().getId() %>">添加标签</a></p>
+             标签：
+     <%
+     Iterator<Key> tagiter;
+     tagiter = movielist.getMovieTag().iterator();
+     if (tagiter.hasNext()) {
+    	 PersistenceManager pm2 = PMF.get().getPersistenceManager();
+    	 while (tagiter.hasNext()) {
+    		 Tag tag = pm2.getObjectById(Tag.class,tagiter.next());
+     %>
+             <%=tag.getTagname() %>  
+     <%  
+         }
+    	 pm2.close();
+     }else {
+     %>
+                             还没有任何标签
+     <%
+       }
+     %>
+     <a href="collectlist.action?listID=<%=movielist.getKey().getId() %>">收藏</a>
+     <br></br>
+     <a href="addmovie.jsp?parentID=<%=movielist.getKey().getId()%>" >添加电影</a>
      <%
      Iterator<Key> iter;
      iter = movielist.getMovieInList().iterator();
@@ -30,15 +52,23 @@
     	 while (iter.hasNext()) {
     		 Movie movie = pm1.getObjectById(Movie.class, iter.next());
     %>
-    		name: <p><b><%=movie.getMoviename() %>></b></p>
-    		 description:<p><%=movie.getMovieDescription() %>></p>
+    		<p><b>name: <%=movie.getMoviename() %></b></p>
+    		 <p>description:<%=movie.getMovieDescription() %></p>
+    		 <p>link:<a href="<%=movie.getMovielink() %>" target="_blank"><%=movie.getMovielink() %></a></p>
+    		 <a href="deletemovie.action?movieID=<%=movie.getKey().getId() %>&listID=<%=movielist.getKey().getId() %>">删除电影</a>
      <%
     	 }
+    	 pm1.close();
      }else{
      %>
         There is no movie in list now;
      <%
      }
      %>
+     <br></br>
+     <br></br>
+     <br></br>
+     <br></br>
+     <a href="addcomments.jsp?listID=<%=movielist.getKey().getId() %>">添加新评论</a>
 </body>
 </html>

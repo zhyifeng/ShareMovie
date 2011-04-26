@@ -1,0 +1,17 @@
+package com.sysu.sharemovie.action.movielist;
+
+import com.sysu.sharemovie.action.BaseAction;
+
+@SuppressWarnings("serial")
+public class collectMovieList extends BaseAction{
+	private long listID;
+
+	public void setListID(long listID) {
+		this.listID = listID;
+	}
+
+	public long getListID() {
+		return listID;
+	}
+	
+}

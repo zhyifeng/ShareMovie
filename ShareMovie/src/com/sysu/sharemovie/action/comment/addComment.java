@@ -1,13 +1,17 @@
 package com.sysu.sharemovie.action.comment;
 
+import java.util.Date;
+
 import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.datastore.KeyFactory;
 import com.opensymphony.xwork2.ModelDriven;
 import com.sysu.sharemovie.action.BaseAction;
 import com.sysu.sharemovie.dao.CommentDAO;
 import com.sysu.sharemovie.dao.MovieListDAO;
+//import com.sysu.sharemovie.dao.SMUserDAO;
 import com.sysu.sharemovie.jdo.Comment;
 import com.sysu.sharemovie.jdo.MovieList;
+//import com.sysu.sharemovie.jdo.SMUser;
 
 @SuppressWarnings("serial")
 public class addComment extends BaseAction implements ModelDriven<Comment>{
@@ -31,19 +35,27 @@ public class addComment extends BaseAction implements ModelDriven<Comment>{
 	public String execute(){
 		if (!loggedIn())
 			return LOGIN;
+		Date date = new Date();
 		MovieListDAO listDAO = new MovieListDAO();
 		CommentDAO commentDAO = new CommentDAO();
+		//SMUserDAO userDAO = new SMUserDAO();
 		listDAO.makeconnect();
 		commentDAO.makeconnect();
 		Key userKey = (Key) getSession("userkey");
+		String username = (String)getSession("username");
 		Key listkey=KeyFactory.createKey(MovieList.class.getSimpleName(), Long.parseLong(listID));
 		MovieList list = listDAO.queryMovieListByID(listkey);
+		//SMUser user = userDAO.querySMUserByID(userKey);
 		commentDAO.addComment(comment);
 		list.getMovieComment().add(comment.getKey());
+		//user.getUserComments().add(comment.getKey());
+		comment.setDate(date);
 		comment.setAuthor(userKey);
+		comment.setAuthorname(username);
 		comment.setListkey(listkey);
 		commentDAO.closeconnect();
 		listDAO.closeconnect();
+		//userDAO.closeconnect();
 		this.addActionMessage("success");
 		return SUCCESS;
 	}

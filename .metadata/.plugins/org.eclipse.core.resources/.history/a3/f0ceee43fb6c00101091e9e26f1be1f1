@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<%@ page import="com.google.appengine.api.datastore.Key"%>
+<%@ page import="javax.jdo.PersistenceManager"%>
+<%@ page import="com.sysu.sharemovie.dao.*"%>
+<%@ page import="com.sysu.sharemovie.jdo.*" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<%@page import="java.util.Iterator"%><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>home</title>
+</head>
+<body>
+    <s:actionmessage/>
+    <%
+      Key key = (Key)session.getAttribute("userkey");
+      PersistenceManager pm = PMF.get().getPersistenceManager();
+      SMUser user = pm.getObjectById(SMUser.class,key);
+      pm.close();
+    %>
+          用户名：<%=user.getUsername()%>
+    <a href="addlist.jsp">添加电影列表</a>
+    <%
+      Iterator<Key> iter;
+      iter = user.getUserMovielist().iterator();
+      if (iter.hasNext()) {
+    	  PersistenceManager pm1 = PMF.get().getPersistenceManager();
+    	  while (iter.hasNext()) {
+    		  MovieList usermovielist = pm1.getObjectById(MovieList.class,iter.next());
+    %>
+             <p><b>listname: <a href="movielist.jsp?list=<%=usermovielist.getKey().getId() %>"><%=usermovielist.getListname() %></a></b></p>
+    		 <a href="deletemovielist.action?listID=<%=usermovielist.getKey().getId() %>">删除</a>
+    <% 
+         }
+      }else {
+    %>
+    	  还没有创建任何电影列表
+    <%
+      }
+    %>
+</body>
+</html>

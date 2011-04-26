@@ -41,13 +41,11 @@ public class SMUser {
 	private Set<Key> userMovielist;
 	
 	@Persistent
+	private Set<Key> collectMovielist; /**/
+	
+	@Persistent
 	private Set<Key> userComments;
 	
-/*	public SMUser(String username, String password) {
-		this.username = username;
-		this.password = password;
-	}
-*/
 	public Key getKey() {
 		return key;
 	}
@@ -128,5 +126,12 @@ public class SMUser {
 		this.userComments = userComments;
 	}
 
+	public void setCollectMovielist(Set<Key> collectMovielist) {
+		this.collectMovielist = collectMovielist;
+	}
+
+	public Set<Key> getCollectMovielist() {
+		return collectMovielist;
+	}
 
 }

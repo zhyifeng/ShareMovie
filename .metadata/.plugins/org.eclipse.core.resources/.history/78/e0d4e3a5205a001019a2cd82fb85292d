@@ -1,7 +1,0 @@
-package com.sysu.sharemovie.action.tag;
-
-import com.sysu.sharemovie.action.BaseAction;
-
-public class addTag extends BaseAction {
-
-}

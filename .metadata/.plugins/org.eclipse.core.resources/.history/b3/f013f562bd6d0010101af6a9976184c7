@@ -1,0 +1,18 @@
+package com.sysu.sharemovie.action.friend;
+
+import com.sysu.sharemovie.action.BaseAction;
+
+@SuppressWarnings("serial")
+public class addfriend extends BaseAction{
+	private long friendkey;
+
+	public void setFriendkey(long friendkey) {
+		this.friendkey = friendkey;
+	}
+
+	public String getFriendkey() {
+		return friendkey;
+	}
+	
+	
+}

@@ -29,12 +29,51 @@
 		   <result name="input">addlist.jsp</result>
 		</action>
 		
+		<action name="deletemovielist" class="com.sysu.sharemovie.action.movielist.deleteMovieList">
+		   <result name="success">home.jsp</result>
+		   <result name="input">login.jsp</result>
+		   <result name="error">index.jsp</result>
+		</action>
+		
 		<action name="addmovie" class="com.sysu.sharemovie.action.movie.addMovie">
 		   <result name="success">movielist.jsp?listID=${listID}</result>
 		   <result name="input">login.jsp</result>
 		   <result name="error">index.jsp</result>
 		</action>
 		
+		<action name="deletemovie" class="com.sysu.sharemovie.action.movie.deleteMovie">
+		   <result name="success">movielist.jsp?listID=${listID}</result>
+		   <result name="input">login.jsp</result>
+		   <result name="error">error.jsp</result>
+		</action>
 		
+		<action name="addcomment" class="com.sysu.sharemovie.action.comment.addComment">
+		   <result name="success">addcomments.jsp?listID=${listID}</result>
+		   <result name="input">login.jsp</result>
+		   <result name="error">error.jsp</result>
+		</action>
+		
+		<action name="deletecomment" class="com.sysu.sharemovie.action.comment.deleteComment">
+		   <result name="success">addcomments.jsp?listID=${listID}</result>
+		   <result name="input">login.jsp</result>
+		   <result name="error">error.jsp</result>
+		</action>
+		
+		<action name="addtag" class="com.sysu.sharemovie.action.tag.addTag">
+		   <result name="success">movielist.jsp?listID=${listID}</result>
+		   <result name="input">login.jsp</result>
+		</action>
+		
+		<action name="collectlist" class="com.sysu.sharemovie.action.movielist.collectMovieList">
+		   <result name="success">home.jsp</result>
+		   <result name="input">login.jsp</result>
+		   <result name="error">error.jsp</result>
+		</action>
+		
+		<action name="cancellist" class="com.sysu.sharemovie.action.movielist.cancelMovieList">
+		   <result name="success">home.jsp</result>
+		   <result name="input">login.jsp</result>
+		   <result name="error">error.jsp</result>
+		</action>
 	</package>
 </struts>

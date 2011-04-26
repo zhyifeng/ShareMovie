@@ -1,0 +1,5 @@
+package com.sysu.sharemovie.action.movielist;
+
+public class collectMovieList {
+
+}

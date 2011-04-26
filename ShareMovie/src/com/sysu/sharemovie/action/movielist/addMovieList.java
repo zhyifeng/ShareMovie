@@ -1,5 +1,7 @@
 package com.sysu.sharemovie.action.movielist;
 
+import java.util.Date;
+
 import com.google.appengine.api.datastore.Key;
 import com.opensymphony.xwork2.ModelDriven;
 import com.sysu.sharemovie.jdo.MovieList;
@@ -32,6 +34,7 @@ public class addMovieList extends BaseAction implements ModelDriven<MovieList>{
 	public String execute(){
 		if (!loggedIn())
 			return LOGIN;
+		Date creatdate = new Date();
 		MovieListDAO listDAO = new MovieListDAO();
 		SMUserDAO userDAO = new SMUserDAO();
 		listDAO.makeconnect();
@@ -41,6 +44,7 @@ public class addMovieList extends BaseAction implements ModelDriven<MovieList>{
 		SMUser user = userDAO.querySMUserByID(userKey);
 		user.getUserMovielist().add(list.getKey());
 		list.setAuthor(userKey);
+		list.setCreatedate(creatdate);/*  */
 		setListID(list.getKey().getId());
 		userDAO.closeconnect();
 		listDAO.closeconnect();
