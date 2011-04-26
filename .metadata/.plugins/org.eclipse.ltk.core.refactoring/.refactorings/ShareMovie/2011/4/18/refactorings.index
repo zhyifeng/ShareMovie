@@ -1,3 +1,5 @@
 1303606418373	Encapsulate field 'collectMovielist'
 1303606491080	Encapsulate field 'listID'
 1303607916958	Encapsulate field 'listID'
+1303784679665	Rename type 'addfriend'
+1303786182097	Encapsulate field 'friendkey'

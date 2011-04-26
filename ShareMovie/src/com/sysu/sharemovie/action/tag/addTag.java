@@ -1,6 +1,8 @@
 package com.sysu.sharemovie.action.tag;
 
+
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 import com.google.appengine.api.datastore.Key;
@@ -43,16 +45,23 @@ public class addTag extends BaseAction implements ModelDriven<Tag>{
 		Tag tagex = tagDAO.queryTagByName(tag.getTagname());
 		if (tagex==null) {
 			tagDAO.addTag(tag);
-			tagex = this.tag;
+			Set<Key> taginmovielist = new HashSet<Key>();
+			taginmovielist.add(list.getKey());
+			tag.setTaginmovielist(taginmovielist);
+			list.getMovieTag().add(tag.getKey());
+		} else {
+			Set<Key> taginmovielist = new HashSet<Key>();
+			Iterator<Key> iter;
+			iter  = tagex.getTaginmovielist().iterator();
+			while (iter.hasNext()) {
+				Key mlistkey = iter.next();
+				taginmovielist.add(mlistkey);
+				System.out.println("movielistkey"+String.valueOf(mlistkey));
+			}
+			taginmovielist.add(list.getKey());
+			tagex.setTaginmovielist(taginmovielist);
+			list.getMovieTag().add(tagex.getKey());
 		}
-		System.out.println("tagkey:"+String.valueOf(tag.getKey()));
-		list.getMovieTag().add(tagex.getKey());
-		//System.out.println("listkey:"+String.valueOf(list.getKey()));
-		//tag.getTaginmovielist().add(list.getKey());
-		//Set<Key> taginmovielist = new HashSet<Key>();
-		Set<Key> taginmovielist = tagex.getTaginmovielist();
-		taginmovielist.add(list.getKey());
-		tagex.setTaginmovielist(taginmovielist);
 		tagDAO.closeconnect();
 		listDAO.closeconnect();
 		this.addActionMessage("success");

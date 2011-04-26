@@ -49,5 +49,9 @@
        <!-- <input type="hidden" name="date" value="${request.date}"></input> -->
        <s:submit value="发表"></s:submit>
     </s:form>
+    <br></br>
+    <br></br>
+    <br></br>
+    <a href="movielist.jsp?listID=<%=listID %>">返回列表</a>
 </body>
 </html>

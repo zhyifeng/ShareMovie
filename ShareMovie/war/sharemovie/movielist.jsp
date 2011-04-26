@@ -17,10 +17,12 @@
      Long listID = Long.valueOf(request.getParameter("listID"));
      PersistenceManager pm = PMF.get().getPersistenceManager();
      MovieList movielist = pm.getObjectById(MovieList.class, listID);
+     SMUser user = pm.getObjectById(SMUser.class, movielist.getAuthor().getId());
      pm.close();
      %>
              电影列表名：<p><b><%=movielist.getListname() %></b></p>
              列表描述：<p><%=movielist.getListDescription() %></p>
+             发表人：<p><%=user.getUsername() %></p><a href="addfriend.action?friendkey=<%=user.getKey().getId() %>">关注</a>
      <p><a href="addtag.jsp?listID=<%=movielist.getKey().getId() %>">添加标签</a></p>
              标签：
      <%
@@ -70,5 +72,9 @@
      <br></br>
      <br></br>
      <a href="addcomments.jsp?listID=<%=movielist.getKey().getId() %>">添加新评论</a>
+     <br></br>
+     <br></br>
+     <br></br>
+     <a href="home.jsp">返回个人主页</a>
 </body>
 </html>

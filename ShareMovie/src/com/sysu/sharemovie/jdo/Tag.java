@@ -1,5 +1,6 @@
 package com.sysu.sharemovie.jdo;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.jdo.annotations.IdGeneratorStrategy;
@@ -45,5 +46,7 @@ public class Tag {
 		this.taginmovielist = taginmovielist;
 	}
     
-	
+	public Tag() {
+		taginmovielist = new HashSet<Key>();
+	}
 }

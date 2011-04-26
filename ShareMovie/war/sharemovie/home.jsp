@@ -85,5 +85,24 @@
 		query.closeAll();
 	}
     %>
+    <br></br>
+    <br></br>
+          你的好友：
+    <%
+    iter = user.getFriendlist().iterator();
+    if (iter.hasNext()) {
+    	PersistenceManager pm4 = PMF.get().getPersistenceManager();
+    	while (iter.hasNext()) {
+    		SMUser friend = pm4.getObjectById(SMUser.class, iter.next());
+    %>
+        <p><%=friend.getUsername() %></p>  <a href="deletefriend.action?friendkey=<%=friend.getKey().getId() %>">解除关系</a>
+    <%
+        }
+    }else {
+    %>
+           你还没有添加任何好友
+    <%
+    }
+    %>
 </body>
 </html>

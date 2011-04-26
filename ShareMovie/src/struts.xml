@@ -75,5 +75,15 @@
 		   <result name="input">login.jsp</result>
 		   <result name="error">error.jsp</result>
 		</action>
+		
+		<action name="addfriend" class="com.sysu.sharemovie.action.friend.addFriend">
+		   <result name="success">home.jsp</result>
+		   <result name="input">login.jsp</result>
+		</action>
+		
+		<action name="deletefriend" class="com.sysu.sharemovie.action.friend.deleteFriend">
+		   <result name="success">home.jsp</result>
+		   <result name="input">login.jsp</result>
+		</action>
 	</package>
 </struts>

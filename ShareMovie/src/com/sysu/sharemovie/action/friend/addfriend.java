@@ -7,7 +7,7 @@ import com.sysu.sharemovie.dao.SMUserDAO;
 import com.sysu.sharemovie.jdo.SMUser;
 
 @SuppressWarnings("serial")
-public class addfriend extends BaseAction{
+public class addFriend extends BaseAction{
 	private String friendkey;
 
 	public void setFriendkey(String friendkey) {
@@ -29,6 +29,7 @@ public class addfriend extends BaseAction{
 		SMUser user = userDAO.querySMUserByID(userKey);
 		SMUser friend = userDAO.querySMUserByID(key);
 		user.getFriendlist().add(friend.getKey());
+		friend.getFriendlist().add(user.getKey());
 		userDAO.closeconnect();
 		return SUCCESS;
 	}

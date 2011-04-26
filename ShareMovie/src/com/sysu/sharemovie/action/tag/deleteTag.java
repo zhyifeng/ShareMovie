@@ -48,6 +48,9 @@ public class deleteTag extends BaseAction {
 		MovieList list = listDAO.queryMovieListByID(listkey);
 		list.getMovieTag().remove(tagkey);
 		tag.getTaginmovielist().remove(listkey);
+		if (tag.getTaginmovielist().size() == 0) {
+			tagDAO.deleteTag(tag.getKey());
+		}
 		tagDAO.closeconnect();
 		listDAO.closeconnect();
 	}
