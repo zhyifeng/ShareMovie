@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="49" version="2.0">
+<workbench progressCount="51" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="380" y="0">
 <fastViewData fastViewLocation="1024">
@@ -10,7 +10,7 @@
 </perspectiveBar>
 <coolbarLayout locked="0">
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="101" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="124" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="adt.actionSet.avdManager" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="adt.actionSet.wizards" itemType="typeToolBarContribution" x="84" y="22"/>
@@ -20,14 +20,14 @@
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="101" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="130" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="115" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -43,31 +43,65 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="struts.xml" partName="struts.xml" path="E:/sh/ShareMovie/ShareMovie/src/struts.xml" title="struts.xml" tooltip="ShareMovie/src/struts.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/struts.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="addFriend.java" partName="addFriend.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/friend/addFriend.java" title="addFriend.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/friend/addFriend.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/action/friend/addFriend.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="595" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="addTag.java" partName="addTag.java" path="E:/sh/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/tag/addTag.java" title="addTag.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/tag/addTag.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="addTag.java" partName="addTag.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/tag/addTag.java" title="addTag.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/tag/addTag.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/action/tag/addTag.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1982" selectionTopPixel="535"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="859" selectionTopPixel="73"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="web.xml" partName="web.xml" path="E:/sh/ShareMovie/ShareMovie/war/WEB-INF/web.xml" title="web.xml" tooltip="ShareMovie/war/WEB-INF/web.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/war/WEB-INF/web.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TagDAO.java" partName="TagDAO.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/dao/TagDAO.java" title="TagDAO.java" tooltip="ShareMovie/src/com/sysu/sharemovie/dao/TagDAO.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/dao/TagDAO.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="779" selectionTopPixel="153"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="deleteTag.java" partName="deleteTag.java" path="E:/sh/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/tag/deleteTag.java" title="deleteTag.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/tag/deleteTag.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/action/tag/deleteTag.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="408"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="addMovieList.java" partName="addMovieList.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/movielist/addMovieList.java" title="addMovieList.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/movielist/addMovieList.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/addMovieList.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1296" selectionTopPixel="197"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Register.java" partName="Register.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/user/Register.java" title="Register.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/user/Register.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/action/user/Register.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="982" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SMUser.java" partName="SMUser.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/jdo/SMUser.java" title="SMUser.java" tooltip="ShareMovie/src/com/sysu/sharemovie/jdo/SMUser.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/jdo/SMUser.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1807"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="addtag.jsp" partName="addtag.jsp" path="J:/ShareMovie/ShareMovie/war/sharemovie/addtag.jsp" title="addtag.jsp" tooltip="ShareMovie/war/sharemovie/addtag.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/war/sharemovie/addtag.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="collectMovieList.java" partName="collectMovieList.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/movielist/collectMovieList.java" title="collectMovieList.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/movielist/collectMovieList.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/collectMovieList.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="175"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="cancelMovieList.java" partName="cancelMovieList.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/action/movielist/cancelMovieList.java" title="cancelMovieList.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/movielist/cancelMovieList.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/cancelMovieList.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="226"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Movie.java" partName="Movie.java" path="J:/ShareMovie/ShareMovie/src/com/sysu/sharemovie/jdo/Movie.java" title="Movie.java" tooltip="ShareMovie/src/com/sysu/sharemovie/jdo/Movie.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ShareMovie/src/com/sysu/sharemovie/jdo/Movie.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="102"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>&#x0A;<category IMemento.internal.id="Errors"/>
+<expanded>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -95,14 +129,13 @@
 <child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter" isEnabled="false"/>
-<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_RemoteSystemsConnections" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.FieldsFilter" isEnabled="false"/>
+<child filterId="jdt.external.source.project.filter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter" isEnabled="true"/>
-<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_RemoteSystemsTempFiles" isEnabled="true"/>
 <child filterId="org.eclipse.pde.ui.BinaryProjectFilter1" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
 <child filterId="org.eclipse.mylyn.java.ui.MembersFilter" isEnabled="false"/>
@@ -131,7 +164,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -156,11 +189,6 @@
 <alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.junit.JUnitActionSet"/>
-<alwaysOnActionSet id="org.eclipse.jst.servlet.ui.internal.actions.ConvertToWebModuleTypeActionSet"/>
-<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
-<alwaysOnActionSet id="adt.actionSet.wizards"/>
-<alwaysOnActionSet id="adt.actionSet.refactorings"/>
-<alwaysOnActionSet id="adt.actionSet.avdManager"/>
 <show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
 <show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
 <show_view_action id="org.eclipse.jdt.ui.SourceView"/>
@@ -295,143 +323,170 @@
 <workingSets/>
 <navigationHistory>
 <editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/ShareMovie/war/sharemovie/addlist.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/ShareMovie/war/sharemovie/addmovie.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/ShareMovie/war/sharemovie/editlist.jsp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/ShareMovie/src/struts.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/tag/addTag.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/ShareMovie/war/index.html"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/ShareMovie/war/WEB-INF/web.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/tag/addTag.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Test/src/snippet/Snippet.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/ShareMovie/war/sharemovie/addcomments.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/editMovieList.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/addMovieList.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/ShareMovie/war/sharemovie/movielist.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/ShareMovie/war/sharemovie/home.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/deleteMovieList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/tag/deleteTag.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/tag/addTag.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/jdo/Movie.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/cancelMovieList.java"/>
 </editors>
-<item historyLabel="addTag.java" index="1">
-<position info="not_deleted" x="123" y="0"/>
-</item>
-<item historyLabel="web.xml" index="2"/>
-<item historyLabel="addTag.java" index="1">
-<position info="not_deleted" x="123" y="0"/>
-</item>
-<item historyLabel="web.xml" index="2"/>
-<item historyLabel="addTag.java" index="1">
-<position info="not_deleted" x="123" y="0"/>
-</item>
-<item historyLabel="addTag.java" index="1">
-<position info="not_deleted" x="1810" y="0"/>
-</item>
-<item historyLabel="web.xml" index="2"/>
-<item historyLabel="addTag.java" index="1">
-<position info="not_deleted" x="1261" y="19"/>
-</item>
-<item historyLabel="web.xml" index="2"/>
-<item historyLabel="addTag.java" index="1">
-<position info="not_deleted" x="1261" y="19"/>
-</item>
-<item historyLabel="web.xml" index="2"/>
-<item historyLabel="addTag.java" index="1">
-<position info="not_deleted" x="1261" y="19"/>
-</item>
-<item historyLabel="struts.xml" index="0"/>
-<item historyLabel="addTag.java" index="1">
-<position info="not_deleted" x="1261" y="19"/>
-</item>
-<item historyLabel="web.xml" index="2"/>
-<item historyLabel="addTag.java" index="1">
-<position info="not_deleted" x="1757" y="0"/>
-</item>
-<item historyLabel="web.xml" index="2"/>
-<item historyLabel="addTag.java" index="1">
-<position info="not_deleted" x="1757" y="0"/>
-</item>
-<item historyLabel="web.xml" index="2"/>
-<item historyLabel="addTag.java" index="3">
-<position info="not_deleted" x="1892" y="0"/>
-</item>
-<item historyLabel="addTag.java" index="3">
-<position info="not_deleted" x="1645" y="0"/>
-</item>
-<item historyLabel="addTag.java" index="3">
-<position info="not_deleted" x="1652" y="0"/>
-</item>
-<item historyLabel="addTag.java" index="3">
-<position info="not_deleted" x="1750" y="0"/>
-</item>
-<item historyLabel="web.xml" index="2"/>
-<item historyLabel="addTag.java" index="3">
-<position info="not_deleted" x="1750" y="0"/>
-</item>
-<item historyLabel="addTag.java" index="3">
-<position info="not_deleted" x="1798" y="0"/>
-</item>
-<item historyLabel="web.xml" index="2"/>
-<item historyLabel="Snippet.java" index="4">
-<position info="not_deleted" x="145" y="0"/>
-</item>
-<item historyLabel="web.xml" index="2"/>
-<item historyLabel="addTag.java" index="3">
-<position info="not_deleted" x="1798" y="0"/>
-</item>
-<item historyLabel="addcomments.jsp" index="5">
-<position info="not_deleted" x="2157" y="0"/>
-</item>
-<item historyLabel="movielist.jsp" index="6">
+<item historyLabel="addlist.jsp" index="0">
 <position/>
 </item>
-<item historyLabel="addcomments.jsp" index="5">
-<position info="not_deleted" x="2154" y="0"/>
+<item historyLabel="addmovie.jsp" index="1">
+<position info="not_deleted" x="319" y="74"/>
 </item>
-<item historyLabel="movielist.jsp" index="6">
+<item historyLabel="addlist.jsp" index="0">
+<position/>
+</item>
+<item historyLabel="addmovie.jsp" index="1">
+<position info="not_deleted" x="319" y="74"/>
+</item>
+<item historyLabel="addlist.jsp" index="0">
+<position/>
+</item>
+<item historyLabel="addmovie.jsp" index="1">
+<position info="not_deleted" x="319" y="74"/>
+</item>
+<item historyLabel="addlist.jsp" index="0">
+<position/>
+</item>
+<item historyLabel="addmovie.jsp" index="1">
+<position info="not_deleted" x="1140" y="19"/>
+</item>
+<item historyLabel="addlist.jsp" index="0">
+<position info="not_deleted" x="505" y="0"/>
+</item>
+<item historyLabel="editMovieList.java" index="6">
+<position info="not_deleted" x="406" y="0"/>
+</item>
+<item historyLabel="addMovieList.java" index="7">
+<position info="not_deleted" x="1296" y="0"/>
+</item>
+<item historyLabel="editMovieList.java" index="6">
+<position info="not_deleted" x="406" y="0"/>
+</item>
+<item historyLabel="struts.xml" index="3"/>
+<item historyLabel="addlist.jsp" index="0">
+<position info="not_deleted" x="605" y="0"/>
+</item>
+<item historyLabel="web.xml" index="5"/>
+<item historyLabel="index.html" index="4">
+<position info="not_deleted" x="767" y="0"/>
+</item>
+<item historyLabel="addlist.jsp" index="0">
+<position info="not_deleted" x="605" y="0"/>
+</item>
+<item historyLabel="struts.xml" index="3"/>
+<item historyLabel="editMovieList.java" index="6">
+<position info="not_deleted" x="406" y="0"/>
+</item>
+<item historyLabel="addMovieList.java" index="7">
+<position info="not_deleted" x="1296" y="0"/>
+</item>
+<item historyLabel="movielist.jsp" index="8">
+<position info="not_deleted" x="1901" y="0"/>
+</item>
+<item historyLabel="editlist.jsp" index="2">
+<position info="not_deleted" x="1081" y="0"/>
+</item>
+<item historyLabel="addlist.jsp" index="0">
+<position info="not_deleted" x="926" y="25"/>
+</item>
+<item historyLabel="movielist.jsp" index="8">
+<position info="not_deleted" x="1901" y="0"/>
+</item>
+<item historyLabel="editlist.jsp" index="2">
+<position info="not_deleted" x="1067" y="7"/>
+</item>
+<item historyLabel="movielist.jsp" index="8">
+<position info="not_deleted" x="925" y="23"/>
+</item>
+<item historyLabel="editlist.jsp" index="2">
+<position info="not_deleted" x="716" y="0"/>
+</item>
+<item historyLabel="movielist.jsp" index="8">
+<position info="not_deleted" x="985" y="30"/>
+</item>
+<item historyLabel="editlist.jsp" index="2">
+<position info="not_deleted" x="641" y="0"/>
+</item>
+<item historyLabel="movielist.jsp" index="8">
+<position info="not_deleted" x="651" y="136"/>
+</item>
+<item historyLabel="editlist.jsp" index="2">
+<position info="not_deleted" x="627" y="0"/>
+</item>
+<item historyLabel="movielist.jsp" index="8">
+<position info="not_deleted" x="870" y="18"/>
+</item>
+<item historyLabel="editlist.jsp" index="2">
+<position info="not_deleted" x="627" y="0"/>
+</item>
+<item historyLabel="struts.xml" index="3"/>
+<item historyLabel="movielist.jsp" index="8">
+<position info="not_deleted" x="93" y="205"/>
+</item>
+<item historyLabel="editlist.jsp" index="2">
+<position info="not_deleted" x="1047" y="0"/>
+</item>
+<item historyLabel="addTag.java" index="9">
+<position info="not_deleted" x="1031" y="90"/>
+</item>
+<item historyLabel="addTag.java" index="9">
+<position info="not_deleted" x="859" y="0"/>
+</item>
+<item historyLabel="addMovieList.java" index="7">
+<position info="not_deleted" x="1296" y="0"/>
+</item>
+<item historyLabel="addlist.jsp" index="0">
+<position info="not_deleted" x="926" y="25"/>
+</item>
+<item historyLabel="editlist.jsp" index="2">
+<position info="not_deleted" x="1047" y="0"/>
+</item>
+<item historyLabel="addmovie.jsp" index="1">
+<position info="not_deleted" x="1141" y="17"/>
+</item>
+<item historyLabel="addlist.jsp" index="0">
+<position info="not_deleted" x="723" y="0"/>
+</item>
+<item historyLabel="addmovie.jsp" index="1">
+<position info="not_deleted" x="1095" y="0"/>
+</item>
+<item historyLabel="editlist.jsp" index="2">
+<position info="not_deleted" x="1047" y="0"/>
+</item>
+<item historyLabel="addMovieList.java" index="7">
+<position info="not_deleted" x="1296" y="0"/>
+</item>
+<item historyLabel="editMovieList.java" index="6">
+<position info="not_deleted" x="406" y="0"/>
+</item>
+<item historyLabel="addMovieList.java" index="7">
+<position info="not_deleted" x="1296" y="0"/>
+</item>
+<item historyLabel="Movie.java" index="10">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="home.jsp" index="7">
+<item active="true" historyLabel="cancelMovieList.java" index="11">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="movielist.jsp" index="6">
-<position info="not_deleted" x="2871" y="0"/>
-</item>
-<item historyLabel="addcomments.jsp" index="5">
-<position info="not_deleted" x="2161" y="0"/>
-</item>
-<item historyLabel="addTag.java" index="3">
-<position info="not_deleted" x="1798" y="0"/>
-</item>
-<item historyLabel="web.xml" index="2"/>
-<item historyLabel="addTag.java" index="3">
-<position info="not_deleted" x="1798" y="0"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="8">
-<position info="not_deleted" x="2030" y="0"/>
-</item>
-<item historyLabel="deleteTag.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="deleteTag.java" index="9">
-<position info="not_deleted" x="1468" y="0"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="8">
-<position info="not_deleted" x="2030" y="0"/>
-</item>
-<item historyLabel="deleteTag.java" index="9">
-<position info="not_deleted" x="1468" y="0"/>
-</item>
-<item historyLabel="deleteMovieList.java" index="8">
-<position info="not_deleted" x="2030" y="0"/>
-</item>
-<item historyLabel="addTag.java" index="3">
-<position info="not_deleted" x="1982" y="0"/>
-</item>
-<item historyLabel="web.xml" index="2"/>
-<item historyLabel="deleteTag.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item active="true" historyLabel="web.xml" index="2"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@154145"/>
 <trimItem IMemento.internal.id="right"/>
@@ -443,54 +498,55 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@f8c887"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="deleteTag.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/tag/deleteTag.java">
-<persistable path="/ShareMovie/src/com/sysu/sharemovie/action/tag/deleteTag.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Movie.java" tooltip="ShareMovie/src/com/sysu/sharemovie/jdo/Movie.java">
+<persistable path="/ShareMovie/src/com/sysu/sharemovie/jdo/Movie.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="deleteMovieList.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/movielist/deleteMovieList.java">
-<persistable path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/deleteMovieList.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="home.jsp" tooltip="ShareMovie/war/sharemovie/home.jsp">
-<persistable path="/ShareMovie/war/sharemovie/home.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="movielist.jsp" tooltip="ShareMovie/war/sharemovie/movielist.jsp">
-<persistable path="/ShareMovie/war/sharemovie/movielist.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="addcomments.jsp" tooltip="ShareMovie/war/sharemovie/addcomments.jsp">
-<persistable path="/ShareMovie/war/sharemovie/addcomments.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Snippet.java" tooltip="Test/src/snippet/Snippet.java">
-<persistable path="/Test/src/snippet/Snippet.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" tooltip="ShareMovie/war/index.html">
+<persistable path="/ShareMovie/war/index.html"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="web.xml" tooltip="ShareMovie/war/WEB-INF/web.xml">
 <persistable path="/ShareMovie/war/WEB-INF/web.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="addTag.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/tag/addTag.java">
-<persistable path="/ShareMovie/src/com/sysu/sharemovie/action/tag/addTag.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="HashSet.class" tooltip="java.util.HashSet">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=ShareMovie/D:\/Program Files\/Java\/jdk1.6.0_22\/jre\/lib\/rt.jar&lt;java.util(HashSet.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="addfriend.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/friend/addfriend.java">
-<persistable path="/ShareMovie/src/com/sysu/sharemovie/action/friend/addfriend.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Movie.java" tooltip="ShareMovie/src/com/sysu/sharemovie/jdo/Movie.java">
-<persistable path="/ShareMovie/src/com/sysu/sharemovie/jdo/Movie.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="addlist.jsp" tooltip="ShareMovie/war/sharemovie/addlist.jsp">
-<persistable path="/ShareMovie/war/sharemovie/addlist.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="editlist.jsp" tooltip="ShareMovie/war/sharemovie/editlist.jsp">
+<persistable path="/ShareMovie/war/sharemovie/editlist.jsp"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="addmovie.jsp" tooltip="ShareMovie/war/sharemovie/addmovie.jsp">
 <persistable path="/ShareMovie/war/sharemovie/addmovie.jsp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="local_db.bin" tooltip="ShareMovie/war/WEB-INF/appengine-generated/local_db.bin">
-<persistable path="/ShareMovie/war/WEB-INF/appengine-generated/local_db.bin"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="movielist.jsp" tooltip="ShareMovie/war/sharemovie/movielist.jsp">
+<persistable path="/ShareMovie/war/sharemovie/movielist.jsp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="deleteComment.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/comment/deleteComment.java">
-<persistable path="/ShareMovie/src/com/sysu/sharemovie/action/comment/deleteComment.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="struts.out.xml" tooltip="ShareMovie/src/struts.out.xml">
+<persistable path="/ShareMovie/src/struts.out.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="struts.xml" tooltip="ShareMovie/src/struts.xml">
+<persistable path="/ShareMovie/src/struts.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="addlist.jsp" tooltip="ShareMovie/war/sharemovie/addlist.jsp">
+<persistable path="/ShareMovie/war/sharemovie/addlist.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseAction.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/BaseAction.java">
+<persistable path="/ShareMovie/src/com/sysu/sharemovie/action/BaseAction.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="editMovieList.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/movielist/editMovieList.java">
+<persistable path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/editMovieList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="shareMovieList.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/movielist/shareMovieList.java">
+<persistable path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/shareMovieList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="cancelMovieList.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/movielist/cancelMovieList.java">
+<persistable path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/cancelMovieList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="collectMovieList.java" tooltip="ShareMovie/src/com/sysu/sharemovie/action/movielist/collectMovieList.java">
+<persistable path="/ShareMovie/src/com/sysu/sharemovie/action/movielist/collectMovieList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="addtag.jsp" tooltip="ShareMovie/war/sharemovie/addtag.jsp">
+<persistable path="/ShareMovie/war/sharemovie/addtag.jsp"/>
 </file>
 </mruList>
 </workbench>

@@ -1,15 +1,3 @@
 INDEX VERSION 1.126
-J:\ShareMovie\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4099751141.index
-\ShareMovie
-J:\ShareMovie\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3382365422.index
-\ShareMovie
-J:\ShareMovie\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1297967979.index
-\ShareMovie
-J:\ShareMovie\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4161533273.index
-\ShareMovie
-J:\ShareMovie\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2101553129.index
-\ShareMovie
-J:\ShareMovie\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2306748474.index
-\ShareMovie
 J:\ShareMovie\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3682912342.index
 \ShareMovie

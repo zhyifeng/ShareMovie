@@ -10,7 +10,7 @@
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="com.google.gwt.eclipse.core.moduleClasspathProvider"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.google.appengine.tools.development.DevAppServerMain"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--port=8888 E:\sh\ShareMovie\ShareMovie\war"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--port=8888 J:\ShareMovie\ShareMovie\war"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ShareMovie"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xmx512m &quot;-javaagent:D:\Program Files\eclipse\plugins\com.google.appengine.eclipse.sdkbundle.1.4.2_1.4.2.v201102111810\appengine-java-sdk-1.4.2\lib\agent\appengine-agent.jar&quot;"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-javaagent:D:\eclipse\plugins\com.google.appengine.eclipse.sdkbundle.1.4.2_1.4.2.v201102111811\appengine-java-sdk-1.4.2\lib\agent\appengine-agent.jar -Xmx512m"/>
 </launchConfiguration>

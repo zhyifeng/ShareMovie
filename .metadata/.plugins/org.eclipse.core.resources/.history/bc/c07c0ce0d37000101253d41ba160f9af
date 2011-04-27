@@ -1,0 +1,7 @@
+package com.sysu.sharemovie.action.movielist;
+
+import com.sysu.sharemovie.action.BaseAction;
+
+public class editMovieList extends BaseAction {
+
+}

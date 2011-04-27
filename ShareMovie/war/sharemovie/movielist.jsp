@@ -45,6 +45,8 @@
      %>
      <a href="collectlist.action?listID=<%=movielist.getKey().getId() %>">收藏</a>
      <br></br>
+     <a href="editlist.jsp?listID=<%=movielist.getKey().getId() %>">editlist</a>
+     <br/>
      <a href="addmovie.jsp?parentID=<%=movielist.getKey().getId()%>" >添加电影</a>
      <%
      Iterator<Key> iter;

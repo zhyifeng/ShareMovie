@@ -14,14 +14,14 @@ import com.sysu.sharemovie.dao.SMUserDAO;
 public class addMovieList extends BaseAction implements ModelDriven<MovieList>{
 	private MovieList list= new MovieList();
 	
-	private Long listID;
+	private String listID;
 	
-	public void setListID(Long listID) {
+	public void setListID(String listID) {
 		this.listID = listID;
 	}
 
 
-	public Long getListID() {
+	public String getListID() {
 		return listID;
 	}
 	
@@ -45,7 +45,7 @@ public class addMovieList extends BaseAction implements ModelDriven<MovieList>{
 		user.getUserMovielist().add(list.getKey());
 		list.setAuthor(userKey);
 		list.setCreatedate(creatdate);/*  */
-		setListID(list.getKey().getId());
+		setListID(Long.toString(list.getKey().getId()));
 		userDAO.closeconnect();
 		listDAO.closeconnect();
 		this.addActionMessage("success");

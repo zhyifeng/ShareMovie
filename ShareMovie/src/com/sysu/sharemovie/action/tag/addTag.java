@@ -50,7 +50,7 @@ public class addTag extends BaseAction implements ModelDriven<Tag>{
 			tag.setTaginmovielist(taginmovielist);
 			list.getMovieTag().add(tag.getKey());
 		} else {
-			Set<Key> taginmovielist = new HashSet<Key>();
+			/*Set<Key> taginmovielist = new HashSet<Key>();
 			Iterator<Key> iter;
 			iter  = tagex.getTaginmovielist().iterator();
 			while (iter.hasNext()) {
@@ -59,7 +59,8 @@ public class addTag extends BaseAction implements ModelDriven<Tag>{
 				System.out.println("movielistkey"+String.valueOf(mlistkey));
 			}
 			taginmovielist.add(list.getKey());
-			tagex.setTaginmovielist(taginmovielist);
+			tagex.setTaginmovielist(taginmovielist);*/
+			tagex.getTaginmovielist().add(list.getKey());
 			list.getMovieTag().add(tagex.getKey());
 		}
 		tagDAO.closeconnect();

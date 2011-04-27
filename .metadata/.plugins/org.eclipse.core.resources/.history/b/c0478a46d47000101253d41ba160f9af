@@ -1,0 +1,38 @@
+package com.sysu.sharemovie.action.movielist;
+
+import com.opensymphony.xwork2.ModelDriven;
+import com.sysu.sharemovie.action.BaseAction;
+import com.sysu.sharemovie.dao.MovieListDAO;
+import com.sysu.sharemovie.jdo.MovieList;
+
+public class editMovieList extends BaseAction implements ModelDriven<MovieList>{
+	private MovieList list= new MovieList();
+	
+	private Long listID;
+	
+	public void setListID(Long listID) {
+		this.listID = listID;
+	}
+
+
+	public Long getListID() {
+		return listID;
+	}
+	
+	@Override
+	public MovieList getModel() {
+		return list;
+	}
+
+
+	public String execute(){
+		if (!loggedIn())
+			return LOGIN;
+		MovieListDAO listDAO = new MovieListDAO();
+		listDAO.makeconnect();
+		MovieList listIn=listDAO.queryMovieListByID(listID);
+		listDAO.closeconnect();
+		this.addActionMessage("success");
+		return SUCCESS;
+	}
+}

@@ -1,0 +1,9 @@
+package com.sysu.sharemovie.action.movielist;
+
+import com.opensymphony.xwork2.ModelDriven;
+import com.sysu.sharemovie.action.BaseAction;
+import com.sysu.sharemovie.jdo.MovieList;
+
+public class editMovieList extends BaseAction implements ModelDriven<MovieList>{
+
+}
